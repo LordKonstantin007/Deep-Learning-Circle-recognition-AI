@@ -8,7 +8,7 @@ Im generellen spricht man von Neuronalen Netzwerken, die wie ein Menschliches Ge
 Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnten. Weil KIs in unserer Gesellschaft immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen.
 
 ## Beschreibung unseres Projekts AITRC
-Der Name unseres Projekts ist durch *AI* to recognize Circles entstanden
+Der Name unseres Projekts ist durch __AI__ __t__o __r__ecognize __C__ircles entstanden
 
 
 
