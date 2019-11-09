@@ -53,7 +53,7 @@ Dazwischen verbergen sich weitere Funktionen wie
 ## 5. Datenaufbereitung
 Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
 Man brauch nähmlich ein Dataset. Dieses muss eingeteilt werden. In ein Trainingset und in ein Validationset. Dabei sollte das Validationset ungefähr 20-10% der Größe des Trainingsets entsprechen. Um zufällig diese Anzahl zu transferieren haben wir schnell ein Python Script dafür geschrieben. Somit kann das Trainieren Beginnen.
-'''
+```
 import os
 import shutil
 import fnmatch
@@ -70,7 +70,7 @@ def gen_find(filepat,top):
             j+=1
             print("inner")
             print(j)
-            yield os.path.join(path,name)'''
+            yield os.path.join(path,name)
 
 # Example use
 def do():
@@ -87,7 +87,7 @@ def do():
         number = int(numberAsString)
         
         if number % 10 == 0:
-            shutil.move(name, dst)
+            shutil.move(name, dst)```
            
 https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 
