@@ -49,7 +49,49 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Sigmoid
 - Softmax
 
-## 5. Trainieren einer KI 
+
+## 5. Datenaufbereitung
+Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
+Man brauch nähmlich ein Dataset. Dieses muss eingeteilt werden. In ein Trainingset und in ein Validationset. Dabei sollte das Validationset ungefähr 20-10% der Größe des Trainingsets entsprechen. Um zufällig diese Anzahl zu transferieren haben wir schnell ein Python Script dafür geschrieben. Somit kann das Trainieren Beginnen.
+
+import os
+import shutil
+import fnmatch
+
+def gen_find(filepat,top):
+    print("gen_finding")
+    i = 0
+    for path, dirlist, filelist in os.walk(top):
+        i+=1
+        print("outer")
+        print(i)
+        j = 0
+        for name in fnmatch.filter(filelist,filepat):
+            j+=1
+            print("inner")
+            print(j)
+            yield os.path.join(path,name)
+
+# Example use
+def do():
+    print("doing")
+    src = './data/train/Vierecke' # input
+    dst = './data/validation/Vierecke' # desired location
+
+    filesToMove = gen_find("*.png",src)
+    for name in filesToMove:
+        splitName = name.split(".png")[0].split('\\')[-1]
+        print(splitName)
+        numberAsString = splitName
+        print(numberAsString)
+        number = int(numberAsString)
+        
+        if number % 10 == 0:
+            shutil.move(name, dst)
+           
+https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
+
+## 6. Trainieren einer KI 
 Für das Trainieren einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine Neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
 Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine Bestimmte Erkennung spezialisiert und nicht auf ein Bestimmtes Bild.
 Die zu Veränderende Werte in der KI sind Biases und Weights.
