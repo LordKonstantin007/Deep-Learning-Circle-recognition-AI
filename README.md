@@ -125,3 +125,36 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 
 
 
+
+
+
+
+
+
+
+## Daten Erratung
+Als erstes Speichern wir die Größe unserer Gewichte in einer .h5 Datei.
+```model.save_weights('first_try.h5')```
+Für das Erraten eines Bilds können wir eines vom Validationset laden, dazu wird die Größe des Bildes nochmals angegeben
+Zusätzlich muss das Bild in ein Array konvertiert werden, hierzu verwenden wir Numpy.
+```
+img_pred = image.load_img('data/validation/?', target_size = (200, 200))
+img_pred = image.img_to_array(img_pred)
+img_pred = np.expand_dims(img_pred, axis = 0)
+```
+Das oben geladene Bild wird als Ergebnis definiert, dieses Ergebnis wird in der Konsole angezeigt.
+Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Kreis handelt.
+Ist das Ergebnis nicht 1, so handelt es sich um ein Viereck.
+```
+rslt = model.predict(img_pred)
+print (rslt)
+if rslt[0][0] == 1:
+     prediction = "Kreis"
+else:
+     prediction = "Viereck"    
+print (prediction) 
+```
+Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
+
+
+
