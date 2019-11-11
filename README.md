@@ -134,13 +134,14 @@ Dense wird verwendet um ein Hidden Layer an unser Output Layer anzuhängen.
 Außerdem verwenden wir natürlich Keras und Numpy. Numpy verwenden wir um unsere Arrays zu manipulieren, damit wir einfach unsere Ergebnisse in Arrays anzeigen können.
 Zu guter letzt brauchen wir keras.preprocessing import image, damit unsere Bilder importieren und vorverarbeiten können.
 
-
+```
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Activation, Dropout, Flatten, Dense, Conv2D, MaxPooling2D
 from keras import backend as K 
 import numpy as np
 from keras.preprocessing import image
+``` 
 
 
 
