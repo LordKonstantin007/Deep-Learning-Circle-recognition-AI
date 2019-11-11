@@ -1,5 +1,7 @@
 # Deep-Learning-Circle/Square-Recognition-AI (AItRCaS)
 AI (programmed with Python, Tensorflow and Keras) to recognize Circles and Squares AItRCaS 
+keras-logo.png
+![Keras-Logo](images/keras-logo.png)
 
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
 
