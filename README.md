@@ -159,7 +159,7 @@ from keras.preprocessing import image
 
 ## Daten Erratung
 Als erstes Speichern wir die Größe unserer Gewichte in einer .h5 Datei.
-```model.save_weights('first_try.h5')```
+```model.save_weights('dataname.h5')```
 Für das Erraten eines Bilds können wir eines vom Validationset laden, dazu wird die Größe des Bildes nochmals angegeben
 Zusätzlich muss das Bild in ein Array konvertiert werden, hierzu verwenden wir Numpy.
 ```
