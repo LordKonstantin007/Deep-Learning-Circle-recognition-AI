@@ -16,7 +16,8 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 5. Trainieren einer KI
 ### 6. Datenaufbereitung
 ### 7. Training Process and Analysing
-### 8. Quellen
+### 8. Fazit
+### 9. Quellen
 
 
 
