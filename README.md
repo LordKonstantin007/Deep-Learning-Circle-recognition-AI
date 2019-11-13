@@ -16,6 +16,7 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 5. Trainieren einer KI
 ### 6. Datenaufbereitung
 ### 7. Training Process and Analysing
+### 8. Quellen
 
 ## 1. Programmauswahl
 Zunächst haben wir uns gründlich informiert, welche Programme für das Programmieren von Ki's die einfachste Benutzung haben.
