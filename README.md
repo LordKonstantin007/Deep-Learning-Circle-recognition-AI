@@ -163,6 +163,13 @@ Als erstes Speichern wir die Größe unserer Gewichte in einer .h5 Datei.
 Für das Erraten eines Bilds können wir eines vom Validationset laden, dazu wird die Größe des Bildes nochmals angegeben
 Zusätzlich muss das Bild in ein Array konvertiert werden, hierzu verwenden wir Numpy.
 ```
+import numpy as np
+
+from keras.preprocessing import image
+from keras.models import load_model
+
+model = load_model('model.h5')
+
 img_pred = image.load_img('data/validation/?', target_size = (200, 200))
 img_pred = image.img_to_array(img_pred)
 img_pred = np.expand_dims(img_pred, axis = 0)
