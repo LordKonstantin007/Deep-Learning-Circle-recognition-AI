@@ -12,7 +12,7 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 1. Programmauswahl
 ### 2. Programme Instalieren
 ### 3. Erlernen der Grundlagen von KI's
-### 4. Aufbau der KI
+### 4. Aufbau und Code der KI
 ### 5. Trainieren einer KI
 ### 6. Datenaufbereitung
 ### 7. Training Process and Analysing
@@ -32,7 +32,7 @@ https://www.anaconda.com/distribution/
 Die Kenntnis über die Funktionsweise und der Aufbau von Kis waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube, Wissenschaftlichen Papers und Internetadressen konnte viel Wissen mitgenommen werden.
 Aufgelistet werden diese in unseren Quellen.
 
-## 4. Aufbau der KI
+## 4. Aufbau und Code der KI
 In unserem Fall programmieren wir ein CNN (Convolutional Neural Network). Diese sind insofern sinvoll, dass sie in der Lage sind Teile auf einem Bild durch bestimmte Filter zu erkennen. Deswegen werden CNNs insbesonders in der Bilderkennung verwendet. 
 
 *Ein Convolutional Neural Network (auch „ConvNet“ genannt) ist in der Lage, Input in Form einer Matrix zu verarbeiten. Dies ermöglicht es, als Matrix dargestellte Bilder (Breite x Höhe x Farbkanäle) als Input zu verwenden. Ein normales neuronales Netz z.B. in Form eines Multi-Layer -Perceptrons (MLP) benötigt dagegen einen Vektor als Input, d.h. um ein Bild als Input zu verwenden, müssten die Pixel des Bildes in einer langen Kette hintereinander ausgerollt werden (Flattening). Dadurch sind normale neuronale Netze z.B. nicht in der Lage, Objekte in einem Bild unabhängig von der Position des Objekts im Bild zu erkennen. Das gleiche Objekt an einer anderen Position im Bild hätte einen völlig anderen Input-Vektor.*
@@ -51,6 +51,14 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Sigmoid
 - Softmax
 
+### Convolutional Layer
+
+### Max Pooling Layer
+
+### Flattening Layer
+
+### Dense Layer (Densely connected Layer)
+
 ### ReLU (rectified linear unit)
 Diese Aktivierungsfunktion ist wichtig für den Nomalization Process. Aktivierungsfunktionen können bestimmte Neuronen mit denen sie weiterverknüpft sind aktivieren (1) und deaktivieren (0). Hierbei werden negative Werte normalisiert, bzw. wird das Signal des Outputs so verändert, sodass das folgende Neuron deaktiviert wird. Zahlen größer als 0 bleiben gleich.
 f(x) = max(0,x)
@@ -64,7 +72,7 @@ Diese Aktivierungsfunktion
 
 
 
-![Sigmoid-Function](images/.png)
+### Softmax function
 
 
 
@@ -79,14 +87,6 @@ Dense wird verwendet um ein Hidden Layer an unser Output Layer anzuhängen.
 Außerdem verwenden wir natürlich Keras und Numpy. Numpy verwenden wir um unsere Arrays zu manipulieren, damit wir einfach unsere Ergebnisse in Arrays anzeigen können.
 Zu guter letzt brauchen wir keras.preprocessing import image, damit unsere Bilder importieren und vorverarbeiten können.
 
-
-
-
-### Image Preprocessing
-
-
-
-
 ```
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
@@ -95,13 +95,21 @@ from keras import backend as K
 import numpy as np
 from keras.preprocessing import image
 ``` 
+
+
+### Image Preprocessing
+
+
+### Aufbau des ConvNets
+
+
 ## 5. Trainieren einer KI 
 Für das Trainieren einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine Neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
 Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine Bestimmte Erkennung spezialisiert und nicht auf ein Bestimmtes Bild.
 Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
---Optimizer-----------------------------------------------------------------------------------------------------
+### Optimizer
 
 ## 5. Datenaufbereitung
 Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
