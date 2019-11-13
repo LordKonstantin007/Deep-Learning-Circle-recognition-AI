@@ -15,7 +15,7 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 4. Aufbau und Code der KI
 ### 5. Trainieren einer KI
 ### 6. Datenaufbereitung
-### 7. Training Process and Analysing
+### 7. Daten Erratung und Analysing
 ### 8. Fazit
 ### 9. Quellen
 
@@ -239,7 +239,7 @@ def do():
 https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 
 
-## Daten Erratung
+## Daten Erratung und Analysing
 
 Wir haben die Daten Erratung in einer seperat abgespeicherten Python-Datei gespeichert (output.py).
 Somit müssen wir das Model erneut laden, sowie die notwendigen Libraries.
@@ -271,4 +271,8 @@ print (prediction)
 ```
 Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 
+
+
+
+## Fazit
 ## Quellen
