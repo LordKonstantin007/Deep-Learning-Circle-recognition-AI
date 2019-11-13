@@ -21,6 +21,9 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 
 
 
+
+
+
 ## 1. Programmauswahl
 Zunächst haben wir uns gründlich informiert, welche Programme für das Programmieren von Ki's die einfachste Benutzung haben.
 
