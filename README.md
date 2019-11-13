@@ -78,8 +78,6 @@ Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funk
 ![Sigmoid-function-2 svg](https://user-images.githubusercontent.com/54355257/68784163-7214ed80-063c-11ea-9223-1ac9861a4f11.png)
 
 
-
-
 ### Softmax function
 
 
@@ -259,15 +257,15 @@ img_pred = image.img_to_array(img_pred)
 img_pred = np.expand_dims(img_pred, axis = 0)
 ```
 Das oben zu erattende Bild wird als Ergebnis definiert, dieses Ergebnis wird in der Konsole angezeigt.
-Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Kreis handelt.
-Ist das Ergebnis nicht 1, so handelt es sich um ein Viereck.
+Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Viereck handelt.
+Ist das Ergebnis nicht 1, so handelt es sich um ein Kreis.
 ```
 rslt = model.predict(img_pred)
 print (rslt)
 if rslt[0][0] == 1:
-     prediction = "Kreis"
+     prediction = "Viereck"
 else:
-     prediction = "Viereck"    
+     prediction = "Kreise"    
 print (prediction) 
 ```
 Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
