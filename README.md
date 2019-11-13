@@ -51,37 +51,24 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Sigmoid
 - Softmax
 
-
-
-
-
-
-
-__ReLU (rectified linear unit)__
+### ReLU (rectified linear unit)
 Diese Aktivierungsfunktion ist wichtig für den Nomalization Process. Aktivierungsfunktionen können bestimmte Neuronen mit denen sie weiterverknüpft sind aktivieren (1) und deaktivieren (0). Hierbei werden negative Werte normalisiert, bzw. wird das Signal des Outputs so verändert, sodass das folgende Neuron deaktiviert wird. Zahlen größer als 0 bleiben gleich.
 f(x) = max(0,x)
 
 ![ReLU-Function](images/ReLU-Function.png)
 
-__Sigmoid function__
+### Sigmoid function
 Diese Aktivierungsfunktion
 
 
 
 
 
+![Sigmoid-Function](images/.png)
 
 
 
-
-
-
-
-
-
-
-
-## Importieren der libraries bzw. der Werkzeuge die wir für das Bauen der KI brauchen. 
+### Importieren der libraries bzw. der Werkzeuge die wir für das Bauen der KI brauchen. 
 
 Als erstes brauchen wir den ImageDataGenerator, dieser erstellt mehrere Daten/Bilder aus einem Bild.
 Wir brauchen außerdem ein Sequentialmodel und kein functional API Model. 
@@ -91,6 +78,14 @@ Flatten ist notwendig um unsere 2D Daten in 1D Arrays zu konvertieren, denn nur 
 Dense wird verwendet um ein Hidden Layer an unser Output Layer anzuhängen.
 Außerdem verwenden wir natürlich Keras und Numpy. Numpy verwenden wir um unsere Arrays zu manipulieren, damit wir einfach unsere Ergebnisse in Arrays anzeigen können.
 Zu guter letzt brauchen wir keras.preprocessing import image, damit unsere Bilder importieren und vorverarbeiten können.
+
+
+
+
+### Image Preprocessing
+
+
+
 
 ```
 from keras.preprocessing.image import ImageDataGenerator
@@ -105,6 +100,8 @@ Für das Trainieren einer KI nutzt man Backpropagation. Aber warum überhaupt da
 Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine Bestimmte Erkennung spezialisiert und nicht auf ein Bestimmtes Bild.
 Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
+
+--Optimizer-----------------------------------------------------------------------------------------------------
 
 ## 5. Datenaufbereitung
 Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
@@ -147,16 +144,6 @@ def do():
 ```
            
 https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
-
-
-
-
-
-
-
-
-
-
 
 
 ## Daten Erratung
