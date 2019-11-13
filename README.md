@@ -170,7 +170,7 @@ from keras.models import load_model
 
 model = load_model('model.h5')
 
-img_pred = image.load_img('data/validation/?', target_size = (200, 200))
+img_pred = image.load_img('data/validation/test/x.png', target_size = (200, 200))
 img_pred = image.img_to_array(img_pred)
 img_pred = np.expand_dims(img_pred, axis = 0)
 ```
