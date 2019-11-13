@@ -1,5 +1,5 @@
 # Deep-Learning-Circle/Square-Recognition-AI (AItRCaS)
-__AItRCaS__: AI (programmed with Python, Tensorflow and Keras) to recognize Circles and Squares AItRCaS. Generell soll unsere KI Kreise und Vierecke voneinander unterschieden können.
+__AItRCaS__: AI (programmed with Python, Tensorflow and Keras) to recognize Circles and Squares AItRCaS.
 
 ![Keras-Logo](images/keras-logo.png) 
 
