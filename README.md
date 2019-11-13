@@ -18,6 +18,8 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 7. Training Process and Analysing
 ### 8. Quellen
 
+
+
 ## 1. Programmauswahl
 Zunächst haben wir uns gründlich informiert, welche Programme für das Programmieren von Ki's die einfachste Benutzung haben.
 
@@ -187,4 +189,4 @@ print (prediction)
 ```
 Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 
-
+## Quellen
