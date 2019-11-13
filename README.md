@@ -73,8 +73,9 @@ f(x) = max(0,x)
 ![ReLU-Function](images/ReLU-Function.png)
 
 ### Sigmoid function
-Diese Aktivierungsfunktion
+Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funktion die dazu dient zu entscheiden ob ein Neuron aktiviert wird oder nicht. Bei Sigmoid kann das Neuron zwischen (1) und (0) sein. Deswegen kann man in seiner Koordinatenfunktion sehen, dass desto näher das Neuron an der (1) sich befindet, desto mehr wird es aktiviert und entgegengesetzt mit der (0). Im vergleich zur  ReLU Funktion ist sie weniger präzise.      
 
+![Sigmoid-Funktion](images/ 
 
 
 
