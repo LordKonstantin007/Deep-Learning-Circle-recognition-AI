@@ -204,7 +204,7 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 ``` 
 model.compile(Loss='binary_crossentropy',
       optimizer='adadelta',
-      metrics=['accuracy])
+      metrics=['accuracy'])
 ``` 
 ## 5. Datenaufbereitung
 Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
