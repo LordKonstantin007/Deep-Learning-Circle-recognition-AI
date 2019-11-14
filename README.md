@@ -61,7 +61,7 @@ Dazwischen verbergen sich weitere Funktionen wie
 ### Convolutional Layer
 Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen addiert und durch die Anzahl der gefilterten Pixel geteilt. 
 
-![Conv Layer]()
+![Conv Layer](images/Convlayer.png)
 
 
 ### Max Pooling Layer
