@@ -332,7 +332,17 @@ print (prediction)
 ```
 Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 
-
+![Test1](images/test1.png) Testbild1 erkannt als Kreis
+![Test2](images/test2.png) Testbild2 erkannt als Kreis
+![Test3](images/test3.png) Testbild3 erkannt als Viereck
+![Test4](images/test4.png) Testbild4 erkannt als Viereck
+![Test5](images/test5.png) Testbild5 erkannt als Viereck 
+![Test6](images/test6.png) Testbild6 erkannt als Viereck
+![Test7](images/test7.png) Testbild7 erkannt als Kreis
+![Test8](images/test8.png) Testbild8 erkannt als Viereck
+![Test9](images/test9.png) Testbild9 erkannt als Kreis
+![Test10](images/test10.png) Testbild10 erkannt als Kreis
+![Test11](images/test11.png) Testbild11 erkannt als Kreis
 
 
 ## Fazit
