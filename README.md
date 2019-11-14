@@ -334,7 +334,8 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 #### https://www.kaggle.com/smeschke/four-shapes
 #### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
-https://www.tensorflow.org/
+#### https://www.tensorflow.org/
+https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 
 
 
@@ -349,7 +350,7 @@ https://www.tensorflow.org/
 #### https://www.youtube.com/watch?v=oOSXQP7C7ck
 #### https://www.youtube.com/watch?v=FmpDIaiMIeA
 #### https://www.youtube.com/watch?v=XNKeayZW4dY&t=894s
-#### https://www.youtube.com/watch?v=BqgTU7_cBnk <--
+
 
 
 
