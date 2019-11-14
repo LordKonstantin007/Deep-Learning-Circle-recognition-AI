@@ -229,6 +229,8 @@ Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass
 Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
+![Loss-and-Accuraccy](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Two-Circles-Binary-Classification-Problem.png)
+
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 
 ### Optimizer
@@ -238,7 +240,7 @@ Hier kommen Optimierer ins Spiel . Sie verknüpfen die Loss funktion und die Mod
 
 Die Hyperparameter der KI kann man sich auch in einem Hyperdimensionalen Raum vorstellen (feature Space). Die Optimizer versuchen zu Beginn am Training an einem Maxium auf ein Minimum zu treffen. Den schnellsten/steilsten Weg bestimmen hier die verschiedenen Optimizer.
 
-![Loss-and-Accuraccy](https://images/Loss-and-Accuracy.png)
+
 ![Feature Space](https://blog.paperspace.com/content/images/2018/05/convex_cost_function.jpg)
 Wir haben den Optimizer ADADELTA verwendet.
 Das Verfahren von Adadelta passt sich dynamisch mit der Zeit an, wobei nur Informationen erster Ordnung verwendet werden, und weist einen minimalen Rechenaufwand auf, der über den stochastischen Gradientenabfall hinausgeht. Diese Optimizer sind ebenfalls durch komplizierte mathematischen Formeln definiert.
