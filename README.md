@@ -185,10 +185,17 @@ validation_generator = test_datagen.flow_from_directory(
 
 
 ### Aufbau des ConvNets
-Ein neuronales Netzwerk z.B. in Form eines Multi-Layer-Perceptrons (MLP) benötigt einen Vektor als Input, d.h. um ein Bild als Input zu verwenden, müssten die Pixel des Bildes in einer langen Kette hintereinander ausgerollt werden (Flattening). In unserem Beispiel sieht man 3 fast identische Strukturen. Zu Beginn wird das Bild durch den Convolutional Layer bearbeitet. Die Parameter (31,2,2) stehen für die größe die der Layer hat und wie groß der Teil vom Bild ist der untersucht wird. Die Pixel werden in Zahlen ungewandelt und durch ein Gewicht (Feature Map) skalarmultipliziert und zu einer Matrix aufgeschrieben. Kurz darauf kommt der erste Filter zum Einsatz, die Relu Activation Funktion. Die Ereinisse die ausgerechnet wurden werden jetzt entweder normalisiert, wenn das Zwischenergebnis zwischen 0 und 1 ist wird sie 1 und wenn das Ergebnis unter 0 ist wird sie zur 0. Die danach aus den Summen entstandene Matrix wird jetzt durch den Maxpooling filter verkleinert. In unserem fall haben wir ein 2x2 kleine Matrix, die herauskommende Matrix ist demnach um das zweifache kleiner, aber dennoch sehr groß. Dieser beschriebene Prozess wird noch n-mal wiederholt (so viel, wie wir bestimmen) und dann nochmal zum Flattening Layer geleitet und danach zum Dense Layer und dann mit der Relu Funktion näher bestimmt. Damit das Neuronale Netzwerk besser angepasst ist, nutzt man Dropout. Diese Funktion deaktiviert zufällig Neuronen und reduziert die Anzahl der Neuronen um 50%. Somit lernet er über verschiedene Neuronen, dass es sich um eine bestimmte Klasse handelt. Der DenseLayer der Größe (1) wird verwendet, nicht der Dense Layer de 64er größe, da wir ein Ergebnis haben wollen, (1) für "ja" oder (0) für "nein". Zum Schluss verwenden wir die Sigmoid Funktion, da wir ein Endergebnis herausbekommen, welches weder 0 und 1 ist. So kann man durch Sigmoid definieren, dass ein Ergebnis näher zu 0, eine (0) wird und genauso andersrum. 
-
+Der Hauptkörper unserer Struktur lässt sich in zwei Teile unterteilen. Am Anfang steht das Convolutioning im Vordergrund bzw. das Feature Extracting und am Ende das Klassifizieren. Zunächst verwnden wir ein Conv Layer, die ReLU Aktivierungsfuktion und ein Maxpooling-Layer. Diese Aufeinanderreihung der Schichten/Operationen machen im wesentlichen die Struktur von CNNs aus.
+#### Feature Extracting
 ``` 
 model = Sequential()
+``` 
+Als erstes erstellen wir ein Objekt mit dem namen model.
+Durch model.add fügen wir dem Objekt, unserem Neuronalen Netzwerk eine Struktur zu. Als erstes nutzen wir ein Conv Layer, um bestimmte Features aus den Bildern extrahieren. Für jedes Bild werden 32 Features extrahiert. Die Größe der Suchenden Filter Matrizen haben dabei die Größe von 3x3, zusätzlich wird nochmals die Größe des Inputs angegeben.
+Mit der Aktivierungsfunktion ReLU, normalisieren wir alle negativen Werte, sodass das folgende Neuron deaktiviert wird. 
+Darauf wird unser Bild auf die wichtigsten Informationen reduziert, indem das Bild mit MaxPooling verkleinert wird. Für alle 2x2 Felder im Bild werden die größten Werte in einem neuen kleineren Bild übertragen. Diese Schritte wiederholt die KI drei mal, wobei beim dritten Mal nach 64 Features auf dem Bild gesucht wird.
+
+``` 
 model.add(Conv2D(32, (3, 3), input_shape=input_shape)
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -203,6 +210,10 @@ model.add(Conv2D(64, (3, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 ``` 
+
+#### Classification
+Aus unseren vielen kleinen 2 dimensionalen Feature Maps, erstellen wir durch Flatten 1 dimensionale Bilder. Danach verwenden wir Dense mit den Wert an der Anzahl von vorhandenen Featuremaps pro Bild (64). model.add(Dense(1)) wird zu unserem Letzten Output, dieser gibt einen Wert an eien Sigmois Funktion, diese gibt einen Output von 0 oder 1. Also ob es sich um ein Kreis oder Viereck handelt.
+ 
 ``` 
 model.add(Flatten())
 model.add(Dense(64))
