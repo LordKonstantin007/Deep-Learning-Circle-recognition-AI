@@ -86,9 +86,6 @@ Bei der Sigmoidfunktion wird der Output eines Neurons so verändert,dass dieser 
 
 ![Sigmoid-function-2 svg](https://user-images.githubusercontent.com/54355257/68784163-7214ed80-063c-11ea-9223-1ac9861a4f11.png)
 
-
-
-
 ### Softmax function
 Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobei mehr als zwei Klassen vorhanden sind. Zum Beispiel hat man vier Klassen (a,b,c,d). Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Die Wahrscheinlichkeit die für eine Klasse steht muss (1=100%=Aktiviert) anzeigen und alle anderen 3 Klassen (0=0%=Deaktiviert). Unteranderem unterlaufen der KI Fehler, plötzlich weisen mehrere Klassen den Wert (1) auf. Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll um die überflüssigen zu deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Somit können KI's bspw. in Ziffern von 0-9 (MNIST Dataset: num_classes = 10) unterscheiden.
 
@@ -99,7 +96,8 @@ Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobe
 Das MNIST Dataset ist eine Datenbank, in welcher sehr viele Bilder von handgeschriebenen Ziffern gespeichert sind.
 Diese besitzen die Größe von 28x28 Pixeln. Zu Beginn vom Cooden von KIs ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
 
-
+![MNIST](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
+https://keras.io/datasets/
 
 ### Importieren der Libraries bzw. der Werkzeuge die wir für das Bauen der KI brauchen. 
 
@@ -186,6 +184,7 @@ validation_generator = test_datagen.flow_from_directory(
 
 ### Aufbau des ConvNets
 Der Hauptkörper unserer Struktur lässt sich in zwei Teile unterteilen. Am Anfang steht das Convolutioning im Vordergrund bzw. das Feature Extracting und am Ende das Klassifizieren. Zunächst verwnden wir ein Conv Layer, die ReLU Aktivierungsfuktion und ein Maxpooling-Layer. Diese Aufeinanderreihung der Schichten/Operationen machen im wesentlichen die Struktur von CNNs aus.
+
 #### Feature Extracting
 ``` 
 model = Sequential()
@@ -224,8 +223,6 @@ model.add(Activation('sigmoid'))
 ``` 
 ![CNN](https://jaai.de/wp-content/uploads/2018/02/Typical_cnn.png)
 
-
-
 ## 5. Trainieren einer KI 
 Für das Trainieren einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine Neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
 Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine Bestimmte Erkennung spezialisiert und nicht auf ein Bestimmtes Bild.
@@ -235,7 +232,16 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 
 ### Optimizer
+Während des Trainings optimieren und ändern wir die Parameter (Gewichte) unseres Modells, um unseren Loss zu minimieren und unsere Vorhersagen so korrekt wie möglich zu machen. Aber wie genau machst du das? Wie und wann ändern Sie die Parameter Ihres Modells?
 
+Hier kommen Optimierer ins Spiel . Sie verknüpfen die Loss funktion und die Modellparameter, indem sie das Modell als Reaktion auf die Ausgabe der Verlustfunktion aktualisieren. Einfacher ausgedrückt: Optimierer formen und formen Ihr Modell in die genaueste Form, indem sie den Wert der Gewichten verändern. Der Optimizer mitteilt regelt den Trainingsprozess, damit die Gewichte so verändert werden, dass der Loss-Wert sinkt und die Genauigkeit steigt.
+
+Die Hyperparameter der KI kann man sich auch in einem Hyperdimensionalen Raum vorstellen (feature Space). Die Optimizer versuchen zu Beginn am Training an einem Maxium auf ein Minimum zu treffen. Den schnellsten/steilsten Weg bestimmen hier die verschiedenen Optimizer.
+
+![Loss-and-Accuraccy](https://images/Loss-and-Accuracy.png)
+![Feature Space](https://blog.paperspace.com/content/images/2018/05/convex_cost_function.jpg)
+Wir haben den Optimizer ADADELTA verwendet.
+Das Verfahren von Adadelta passt sich dynamisch mit der Zeit an, wobei nur Informationen erster Ordnung verwendet werden, und weist einen minimalen Rechenaufwand auf, der über den stochastischen Gradientenabfall hinausgeht. Diese Optimizer sind ebenfalls durch komplizierte mathematischen Formeln definiert.
 
 ``` 
 model.compile(Loss='binary_crossentropy',
@@ -348,6 +354,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.tensorflow.org/
 #### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 #### https://www.quora.com/How-does-softmax-function-work-in-AI-field
+#### https://algorithmia.com/blog/introduction-to-optimizers
 
 
 
