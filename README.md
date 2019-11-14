@@ -2,7 +2,7 @@
 AI (programmed with Python, Tensorflow and Keras) to recognize Circles and Squares AItRCaS 
 
 ![Keras-Logo](images/keras-logo.png)
-![Anaconda+Tensorflow](images/Anaconda+Tensorflow.png)
+
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
 
 KIs übernehmen Momentan eine Menge Arbeit im Industriebereich und deren Einsatzmöglichkeiten sind sehr divers.
