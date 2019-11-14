@@ -76,6 +76,7 @@ Beim Flattening Layer (Fully Connected Layer oder Dense Layer) handelt es sich u
 Diese Objektinformationen werden also in einen oder mehrere Fully Connected Layer eingespeist und mit einem Output-Layer verbunden, welcher z.B. genau die Anzahl von Neuronen besitzt, die der Anzahl der verschiedenen zu erkennenden Klassen entspricht.
 
 ### Dense Layer (Densely connected Layer)
+In einer lineraren Operation in welchem jeder Input mit jedem Output durch ein Gewicht verbunden ist. So sind da (n_inputs mal n_outputs). Darauffolgend ist eine nicht lineare Aktivation Funktion.
 
 ### ReLU (rectified linear unit)
 Diese Aktivierungsfunktion ist wichtig für den Nomalization Process. Aktivierungsfunktionen können bestimmte Neuronen mit denen sie weiterverknüpft sind aktivieren (1) und deaktivieren (0). Hierbei werden negative Werte normalisiert, bzw. wird das Signal des Outputs so verändert, sodass das folgende Neuron deaktiviert wird. Zahlen größer als 0 bleiben gleich.
