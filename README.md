@@ -295,6 +295,7 @@ def do():
         if number % 10 == 0:
             shutil.move(name, dst)
 ```
+![Dataset](images/Dataset.PNG) 
            
 https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 
