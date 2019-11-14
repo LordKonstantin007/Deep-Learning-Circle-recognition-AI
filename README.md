@@ -35,7 +35,7 @@ Als Alternative gibt es Python, Scikit-learn und Docker. Wir haben bspw. Docker 
 
 ## 2. Programme Instalieren
 Das Installieren war leider einer der Schwersten Herausforderungen und auch __sehr__ Zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen. Am Pc zuhause war das coding jedoch vollständig möglich. Nebenbei haben wir Befehle für cmd gelernt.
-https://www.anaconda.com/distribution/
+
 
 ## 3. Erlernen der Grundlagen von KI's
 Die Kenntnis über die Funktionsweise und der Aufbau von Kis waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube, Wissenschaftlichen Papers und Internetadressen konnte viel Wissen mitgenommen werden.
@@ -329,7 +329,9 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 #### https://www.kaggle.com/smeschke/four-shapes
 #### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
-https://www.tensorflow.org/
+#### https://www.tensorflow.org/
+#### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
+#### ttps://jaai.de/machine-deep-learning-529/
 
 
 
