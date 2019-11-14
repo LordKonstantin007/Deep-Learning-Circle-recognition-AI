@@ -59,12 +59,13 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Softmax
 
 ### Convolutional Layer
-Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen addiert und durch die Anzahl der gefilterten Pixel geteilt. 
+Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen in einer neuen Matrix gespeichert.
 
 ![Conv Layer](images/Convlayer.png)
 
 
 ### Max Pooling Layer
+Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist:
 
 ### Flattening Layer
 
