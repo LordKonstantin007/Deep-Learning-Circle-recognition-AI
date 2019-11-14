@@ -69,6 +69,8 @@ Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu
 ### Max Pooling Layer
 Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist:
 
+![Max Pooling Layer](images/MaxpoolSample2.png)
+
 ### Flattening Layer
 
 ### Dense Layer (Densely connected Layer)
