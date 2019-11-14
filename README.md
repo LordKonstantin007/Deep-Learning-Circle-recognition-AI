@@ -59,7 +59,9 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Softmax
 
 ### Convolutional Layer
-Haben das potenzial 
+Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen addiert und durch die Anzahl der gefilterten Pixel geteilt. 
+
+![Conv Layer]()
 
 
 ### Max Pooling Layer
@@ -75,7 +77,7 @@ f(x) = max(0,x)
 ![ReLU-Function](images/ReLU-Function.png)
 
 ### Sigmoid function
-Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funktion die dazu dient zu entscheiden ob ein Neuron aktiviert wird oder nicht. Bei Sigmoid kann das Neuron zwischen (1) und (0) sein. Deswegen kann man in seiner Koordinatenfunktion sehen, dass desto näher das Neuron an der (1) sich befindet, desto mehr wird es aktiviert und entgegengesetzt mit der (0). Im vergleich zur  ReLU Funktion ist sie weniger präzise.      
+Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funktion die dazu dient zu entscheiden ob ein Neuron aktiviert wird oder nicht. Bei Sigmoid kann das Neuron zwischen (1) und (0) sein. Deswegen kann man in seiner Koordinatenfunktion sehen, dass desto näher das Neuron an der (1) sich befindet, desto eher wird es aktiviert und entgegengesetzt mit der (0). Im Vergleich zur  ReLU Funktion ist sie weniger präzise.      
 
 ![Sigmoid-function-2 svg](https://user-images.githubusercontent.com/54355257/68784163-7214ed80-063c-11ea-9223-1ac9861a4f11.png)
 
@@ -85,7 +87,7 @@ Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funk
 ### Softmax function
 Benutzt man wenn man eine Klasssifikation durchführen will. Bei der Berechnung passiert es immer wieder das eine Eigenschaft (ein Ergebniss) die berechnet wird, nicht nur zur einer Klasse zugeordnet wird. Zum Beispiel man hat 26 Klassen. Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Das Neuron das für eine Klasse steht muss (1) anzeigen und alle anderen 25 Klassen (0).Jetzt passieren Fehler und plötzlich zeigen 2 oder 3 Neuronen eine (1). Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll und die überflüssigen deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Danach geht es weiter entweder zur ReLU oder der Sigmoid function.
 
-![Softmax-Function](Softmax-Function.png)
+
 
 
 
@@ -287,8 +289,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 ### Download
 #### https://www.anaconda.com/distribution/
 #### ...
-### Keras
-#### https://keras.io/
+### Keras#### https://keras.io/
 #### https://keras.io/datasets/
 #### https://keras.io/models/sequential/
 #### https://keras.io/layers/convolutional/
@@ -298,6 +299,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://keras.io/visualization/
 #### https://keras.io/optimizers/
 #### https://keras.io/applications/
+
 
 ### Andere Links
 #### https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
