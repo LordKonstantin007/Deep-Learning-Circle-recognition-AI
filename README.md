@@ -346,7 +346,8 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.kaggle.com/smeschke/four-shapes
 #### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 #### https://www.tensorflow.org/
-https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
+#### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
+#### https://www.quora.com/How-does-softmax-function-work-in-AI-field
 
 
 
