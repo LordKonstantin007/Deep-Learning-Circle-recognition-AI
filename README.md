@@ -223,6 +223,8 @@ Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass
 Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
+__Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
+
 ### Optimizer
 
 
@@ -295,6 +297,7 @@ img_pred = np.expand_dims(img_pred, axis = 0)
 Das oben zu erattende Bild wird als Ergebnis definiert, dieses Ergebnis wird in der Konsole angezeigt.
 Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Kreis handelt.
 Ist das Ergebnis nicht 1, so handelt es sich um ein Viereck.
+__Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 ```
 rslt = model.predict(img_pred)
 print (rslt)
