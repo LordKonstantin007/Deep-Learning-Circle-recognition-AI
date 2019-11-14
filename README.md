@@ -132,6 +132,7 @@ Ein kompletter Trainingsdurchlauf aller Input-Daten wird dabei jeweils als Epoch
 Je öfter man eine KI mit dem selben Datensatz trainiert, also je größer die Epochenanzahl, desto besser passt sich die KI der Bilder an. Dabei steigt die Genauigkeit und es sinkt die Lossrate. Epochen lassen sich zusätzlich in Batches einteilen. 
 Wenn alle Batches das neuronale Netz ein Mal durchlaufen haben, ist eine Epoche vollendet. Unsere batch_size ist ein Hyperparameter der beim Trainieren die Anzahl von Samples bestimmt die durch die KI laufen, bevor ihre Parameter (Biases, Weights) geupdated werden.
 
+``` 
 img_width, img_height = 200,200
 
 train_data_dir = 'data/train'
@@ -140,6 +141,7 @@ nb_train_samples = 1000
 nb_validation_samples = 100
 epochs = 15
 batch_size = 20
+``` 
 
 Als nächstes müssen wir klarstellen, dass unsere Bilder im Input die richtige Form haben (channels, height, width/3x200x200) oder ( height, width,channels/200x200x3). 
 Mit Channels sind bei uns die RGB Farben gemeint. Da alle Farben von Pixeln durch drei RGB-Werte definiert sind, sprechen wir bei Bildern von 3 Kanälen/Channels. 
