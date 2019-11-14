@@ -296,8 +296,8 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://keras.io/optimizers/
 #### https://keras.io/applications/
 
-
-https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
+### Andere Links
+#### https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 
 
 
@@ -308,6 +308,8 @@ https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirector
 #### https://www.youtube.com/watch?v=qx8l-LmdgEk
 #### https://www.youtube.com/watch?v=ILsA4nyG7I0
 #### https://www.youtube.com/watch?v=HMcx-zY8JSg
+#### https://www.youtube.com/watch?v=oOSXQP7C7ck
+#### https://www.youtube.com/watch?v=FmpDIaiMIeA
 
 
 
@@ -316,7 +318,7 @@ https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirector
 #### https://www.youtube.com/watch?v=UWxfnNXlVy8&t=666s
 #### https://www.youtube.com/watch?v=qv6UVOQ0F44
 #### https://www.youtube.com/watch?v=zIkBYwdkuTk
-
+#### https://www.youtube.com/watch?v=UWxfnNXlVy8
 
 
 
