@@ -280,6 +280,43 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 
 ## Fazit
 ## Quellen
+
+### Keras
+https://keras.io/
+https://keras.io/datasets/
+https://keras.io/models/sequential/
+https://keras.io/layers/convolutional/
+https://keras.io/layers/core/
+https://keras.io/layers/pooling/
+https://keras.io/preprocessing/image/
+https://keras.io/visualization/
+https://keras.io/optimizers/
+https://keras.io/applications/
+
+
+https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
+
+
+
+### You Tube Videos + Playlist
+https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU
+https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+https://www.youtube.com/watch?v=-7scQpJT7uo
 https://www.youtube.com/watch?v=qx8l-LmdgEk
-https://www.youtube.com/watch?v=m0pIlLfpXWE
+https://www.youtube.com/watch?v=ILsA4nyG7I0
+https://www.youtube.com/watch?v=HMcx-zY8JSg
+
+
+
+
+### Coole Videos zu KIs
+https://www.youtube.com/watch?v=UWxfnNXlVy8&t=666s
+https://www.youtube.com/watch?v=qv6UVOQ0F44
+https://www.youtube.com/watch?v=zIkBYwdkuTk
+
+
+
+
+
+
 
