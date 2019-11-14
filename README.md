@@ -258,7 +258,7 @@ model.compile(Loss='binary_crossentropy',
       optimizer='adadelta',
       metrics=['accuracy'])
 ``` 
-## 5. Datenaufbereitung
+## 6. Datenaufbereitung
 Die Datenaufbereitung ist wenn man Software und Verständnis über das Programmieren hat, auch eine große Herausforderung.
 Man brauch nähmlich ein Dataset. Dieses muss eingeteilt werden. In ein Trainingset und in ein Validationset. Dabei sollte das Validationset ungefähr 20-10% der Größe des Trainingsets entsprechen. Um zufällig diese Anzahl zu transferieren haben wir schnell ein Python Script dafür geschrieben. Somit kann das Trainieren Beginnen.
 ```
@@ -302,7 +302,7 @@ def do():
 https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
 
 
-## Daten Erratung und Analysing
+## 7. Daten Erratung und Analysing
 
 Wir haben die Daten Erratung in einer seperat abgespeicherten Python-Datei gespeichert (output.py).
 Somit müssen wir das Model erneut laden, sowie die notwendigen Libraries.
@@ -348,7 +348,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### ![Test11](images/test11.png) Testbild11 erkannt als Kreis
 
 
-## Fazit
+## 8. Fazit
 ## Quellen
 
 ### Download Anaconda
