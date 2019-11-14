@@ -344,7 +344,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.youtube.com/watch?v=HMcx-zY8JSg
 #### https://www.youtube.com/watch?v=oOSXQP7C7ck
 #### https://www.youtube.com/watch?v=FmpDIaiMIeA
-#### https://www.youtube.com/watch?v=XNKeayZW4dY&t=894s
+#### https://www.youtube.com/watch?v=XNKeayZW4dY&t
 
 
 
