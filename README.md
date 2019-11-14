@@ -86,8 +86,7 @@ Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funk
 
 
 ### Softmax function
-Benutzt man wenn man eine Klasssifikation durchführen will. Bei der Berechnung passiert es immer wieder das eine Eigenschaft (ein Ergebniss) die berechnet wird, nicht nur zur einer Klasse zugeordnet wird. Zum Beispiel man hat 26 Klassen. Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Das Neuron das für eine Klasse steht muss (1) anzeigen und alle anderen 25 Klassen (0).Jetzt passieren Fehler und plötzlich zeigen 2 oder 3 Neuronen eine (1). Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll und die überflüssigen deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Danach geht es weiter entweder zur ReLU oder der Sigmoid function.
-
+Benutzt man wenn man eine Klasssifikation durchführen will. Bei der Berechnung passiert es immer wieder das eine Eigenschaft (ein Ergebniss) die berechnet wird, nicht nur zur einer Klasse zugeordnet wird. Zum Beispiel man hat 26 Klassen. Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Das Neuron das für eine Klasse steht muss (1) anzeigen und alle anderen 25 Klassen (0).Jetzt passieren Fehler und plötzlich zeigen 2 oder 3 Neuronen eine (1). Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll und die überflüssigen deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Somit können KI's eine große Anzahl von verschiedenen Ergebnissen anzeigen, in dem Sinne viele Dinge in einem Bild erkennen.
 
 
 
