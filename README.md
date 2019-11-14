@@ -72,6 +72,8 @@ Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Max
 ![Max Pooling Layer](images/MaxpoolSample2.png)
 
 ### Flattening Layer
+Beim Flattening Layer (Fully Connected Layer oder Dense Layer) handelt es sich um eine normale neuronale Netzstruktur, bei der alle Neuronen mit allen Inputs und allen Outputs verbunden sind. Um den Matrix-Output der Convolutional- und Pooling-Layer in einen Dense Layer speisen zu können, muss dieser zunächst ausgerollt werden (flatten). Die Output-Signale der Filter-Schichten sind unabhängig von der Position eines Objektes, daher sind zwar keine Positionsmerkmale mehr vorhanden, dafür aber ortsunabhängige Objektinformationen.
+Diese Objektinformationen werden also in einen oder mehrere Fully Connected Layer eingespeist und mit einem Output-Layer verbunden, welcher z.B. genau die Anzahl von Neuronen besitzt, die der Anzahl der verschiedenen zu erkennenden Klassen entspricht.
 
 ### Dense Layer (Densely connected Layer)
 
