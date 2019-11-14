@@ -90,9 +90,12 @@ Benutzt man wenn man eine Klasssifikation durchführen will. Bei der Berechnung 
 
 ![Softmax-Function](images/Softmax-Function.png)
 
+### MNIST Dataset
 
 
-### Importieren der libraries bzw. der Werkzeuge die wir für das Bauen der KI brauchen. 
+
+
+### Importieren der Libraries bzw. der Werkzeuge die wir für das Bauen der KI brauchen. 
 
 Als erstes brauchen wir den ImageDataGenerator, dieser erstellt mehrere Daten/Bilder aus einem Bild.
 Wir brauchen außerdem ein Sequentialmodel und kein functional API Model. 
