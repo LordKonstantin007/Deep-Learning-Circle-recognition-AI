@@ -67,7 +67,7 @@ Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu
 
 
 ### Max Pooling Layer
-Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist:
+Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist die relevantesten Signale an die nächsten Schichten weiter zu geben, den Inhalts abstrakter zu machen und die Anzahl der Parameter eines Netzes zu reduzieren.
 
 ![Max Pooling Layer](images/MaxpoolSample2.png)
 
@@ -188,6 +188,7 @@ validation_generator = test_datagen.flow_from_directory(
 
 ### Aufbau des ConvNets
 
+
 ``` 
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape=input_shape)
@@ -203,7 +204,11 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Conv2D(64, (3, 3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
+``` 
 
+
+
+``` 
 model.add(Flatten())
 model.add(Dense(64))
 model.add(Activation('relu'))
@@ -221,6 +226,7 @@ Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
 ### Optimizer
+
 
 ``` 
 model.compile(Loss='binary_crossentropy',
@@ -329,8 +335,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.kaggle.com/smeschke/four-shapes
 #### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 #### https://www.tensorflow.org/
-#### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
-#### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
+https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 
 
 
@@ -344,8 +349,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.youtube.com/watch?v=HMcx-zY8JSg
 #### https://www.youtube.com/watch?v=oOSXQP7C7ck
 #### https://www.youtube.com/watch?v=FmpDIaiMIeA
-#### https://www.youtube.com/watch?v=XNKeayZW4dY&t
-
+#### https://www.youtube.com/watch?v=XNKeayZW4dY&t=894s
 
 
 
