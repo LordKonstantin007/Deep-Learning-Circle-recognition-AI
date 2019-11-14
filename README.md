@@ -231,6 +231,12 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 
 ![Loss-and-Accuraccy](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Two-Circles-Binary-Classification-Problem.png)
 
+### Biases und Weights
+
+![Biases+Weights](https://images.deepai.org/django-summernote/2019-06-03/e20ff932-4269-4bed-82fb-383b0f1ce96d.png)
+Beim Trainieren öffnet sich ein Ladebalken für jede Epoche, wobei zusätzlich die Genauigkeit und der Loss angegeben wird.
+Nachdem das Trainiern fertig war, ließ sich die Funktion der KI ausprobieren.
+![Training](images/Trained.PNG.png)
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 
 ### Optimizer
