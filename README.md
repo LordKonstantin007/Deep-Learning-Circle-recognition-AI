@@ -298,11 +298,14 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 
 ### Andere Links
 #### https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
+#### https://www.kaggle.com/smeschke/four-shapes
+#### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 
 
 
 ### You Tube Videos + Playlist
 #### https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU
+#### https://www.youtube.com/watch?v=RznKVRTFkBY&list=PLZbbT5o_s2xrwRnXk_yCPtnqqo4_u2YGL
 #### https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 #### https://www.youtube.com/watch?v=-7scQpJT7uo
 #### https://www.youtube.com/watch?v=qx8l-LmdgEk
@@ -310,6 +313,8 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.youtube.com/watch?v=HMcx-zY8JSg
 #### https://www.youtube.com/watch?v=oOSXQP7C7ck
 #### https://www.youtube.com/watch?v=FmpDIaiMIeA
+#### https://www.youtube.com/watch?v=XNKeayZW4dY&t=894s
+#### https://www.youtube.com/watch?v=BqgTU7_cBnk <--
 
 
 
