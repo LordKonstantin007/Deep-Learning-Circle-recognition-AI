@@ -330,7 +330,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 #### https://www.tensorflow.org/
 #### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
-#### ttps://jaai.de/machine-deep-learning-529/
+#### https://jaai.de/machine-deep-learning-529/
 
 
 
