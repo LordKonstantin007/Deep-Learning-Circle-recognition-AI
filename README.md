@@ -124,25 +124,34 @@ from keras.preprocessing import image
 ``` 
 
 
-### Image Preprocessing
+### Image Preprocessing:
 
-``` 
+Als erstes müssen die Bilder unseres Datasets gelesen werden können. Dazu geben wir die Größe (width & height) des Bildes und die Directories für das Trainings- und Validationset als Variable an.
+Außerdem definieren wir die Größe des Datensatzes, also wieviele Bilder wir für das Trainieren bereitstellen. Normalerweise gibt man KIs viel mehr Bilder als es bei uns der Fall mit 1000 sind. Doch je größer so ein Datensatz ist, desto länger dauert auch das Training, dafür ist die KI im Erkennen noch präziser.
+Ein kompletter Trainingsdurchlauf aller Input-Daten wird dabei jeweils als Epoche bezeichnet.
+Je öfter man eine KI mit dem selben Datensatz trainiert, also je größer die Epochenanzahl, desto besser passt sich die KI der Bilder an. Dabei steigt die Genauigkeit und es sinkt die Lossrate. Epochen lassen sich zusätzlich in Batches einteilen. 
+Wenn alle Batches das neuronale Netz ein Mal durchlaufen haben, ist eine Epoche vollendet. Unsere batch_size ist ein Hyperparameter der beim Trainieren die Anzahl von Samples bestimmt die durch die KI laufen, bevor ihre Parameter (Biases, Weights) geupdated werden.
+
 img_width, img_height = 200,200
 
 train_data_dir = 'data/train'
 validation_data_dir = 'data/validation'
 nb_train_samples = 1000
 nb_validation_samples = 100
-epochs = 50
+epochs = 15
 batch_size = 20
-``` 
+
+Als nächstes müssen wir klarstellen, dass unsere Bilder im Input die richtige Form haben (channels, height, width/3x200x200) oder ( height, width,channels/200x200x3). 
+Mit Channels sind bei uns die RGB Farben gemeint. Da alle Farben von Pixeln durch drei RGB-Werte definiert sind, sprechen wir bei Bildern von 3 Kanälen/Channels. 
+Mit train_datagen = ImageDataGenerator erstellen wir ein noch größeres Dataset fürs Trainieren,dabei entstehen weit mehr als unseren ursprünglichen 1000 Bildern, diese sind jedoch nicht aufrufbar, es gibt aber Tools, mitwelchen man sich die von KIs veerarbeiteten Bilder anschauen kann.
+Mit rescale Skalieren/Multiplizieren wir die Daten um den Faktor 1/255, bevor wie sie weiter verarbeiten. Die shear_range gibt die Scherintensität an also der Scherwinkel gegen den Urzeigersinn in Grad, mit welchem das Bild verzogen wird (siehe Scherung bei der Geometrie). Die zoom_range steht für das zufällig auftretende Reinzoomen von Bildern.
+horizontal_flip dient zum zufälligen Spiegeln der Hälfte der Bilder in horizontaler Richtung. Beim Testen wird auch ein weiterer Datensatz erstellt der die Bilder nur Neuskaliert, bzw. mit dem Faktor 1/255 multipliziert.
 
 ``` 
-if K.image_data_format() == 'channels_first':
     input_shape = (3, img_width, img_height)
 else:
     input_shape = (img_width, img_height, 3)
-    
+
 train_datagen = ImageDataGenerator(
     rescale=1. / 255,
     shear_range=0.2,
@@ -151,25 +160,27 @@ train_datagen = ImageDataGenerator(
 
 test_datagen = ImageDataGenerator(rescale=1. / 255)
 
+``` 
+Hier erstellen wir ein Training und ein Validation Data Generator. Diese Beiden Generator führen unser Anweisungen für das Image Processing in train_datagen und test_datagen aus. Dafür muss nochmals das Verzeichnis angegeben werden, sowie die Größe des Bildes, die batch size an.
+Unsere Daten lassen sich in einem 1D numpy array umschreiben, deshalb verwenden wir class_mode='binary'.
+
+``` 
 train_generator = train_datagen.flow_from_directory(
     train_data_dir,
     target_size=(img_width, img_height), 
     batch_size=batch_size,
-    class_mode'binary')
+    class_mode='binary')
     
 validation_generator = test_datagen.flow_from_directory(
         validation_data_dir,
         target_size=(img_width, img_height),
         batch_size=batch_size,
         class_mode='binary')
-
-model.fit_generator(
-      train_generator,
-      step_per_epoch=nb_train_samples // batch_size,
-      epochs=epochs,
-      validation_data=validation_generator,
-      validation_steps=nb_validation_samples // batch_size)
 ``` 
+
+
+
+	
 ### Aufbau des ConvNets
 
 
