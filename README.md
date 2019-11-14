@@ -31,14 +31,13 @@ Zunächst haben wir uns gründlich informiert, welche Programme für das Program
 
 Keras ist eine Open-Source-Library zum einfachen Programmieren von neuronalen Netzwerken, die sich über den Anaconda launcher mit leichtigkeit installieren lässt. Die zentralen Merkmale der Bibliothek sind Einfachheit, Erweiterbarkeit und Modularität. Neuronale Netze können mit den bereitgestellten Lösungen erstellt und konfiguriert werden, ohne dass man sich detailliert mit den zugrunde liegenden Backends beschäftigen muss. TensorFlow unterstützt Keras direkt in seiner Kernbibliothek. 
 
-Als Alternative gibt es Python, Scikit-learn und Docker. Wir haben bspw. Docker ausprobiert, doch Keras erwies sich aus meheren Gründen als einfacher. Auch das erstellen von virtuellen Envirements ist in Anaconda viel leichter als das Nutzen von Daemons bei Docker, zusätzlich ist der Code in Keras viel ordentlicher. Tensorflow ist ein Framework fürs programmieren von KIs mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet.Fakt ist das diese Library auch bei Scikit-learn und Docker verwendet und deshalb für das Programmieren von KIs eine zentrale Rolle spielt. 
-
+Als Alternative gibt es Python und Scikit-learn. Wir haben uns letztenendes für Keras und Tensorflow entschieden. Tensorflow ist ein Framework fürs programmieren von KIs mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet. Fakt ist das diese Library unerlässlich für das Programmieren von KIs ist.
 ## 2. Programme Instalieren
-Das Installieren war leider einer der Schwersten Herausforderungen und auch __sehr__ Zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen. Am Pc zuhause war das coding jedoch vollständig möglich. Nebenbei haben wir Befehle für cmd gelernt.
+Das Installieren war leider einer der Schwersten Herausforderungen und auch __sehr__ Zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider anfangs nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen, später haben wir den Fehler behoben. Am Pc zuhause war das coding jedoch immer vollständig möglich. Nebenbei haben wir Befehle für cmd gelernt.
 https://www.anaconda.com/distribution/
 
 ## 3. Erlernen der Grundlagen von KI's
-Die Kenntnis über die Funktionsweise und der Aufbau von Kis waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube, Wissenschaftlichen Papers und Internetadressen konnte viel Wissen mitgenommen werden.
+Die Kenntnis über die Funktionsweise und der Aufbau von Kis waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube und Internetadressen konnte viel Wissen mitgenommen werden.
 Aufgelistet werden diese in unseren Quellen.
 
 ## 4. Aufbau und Code der KI
@@ -52,7 +51,7 @@ Ein Input ist Beispielsweise ein Bild, Video oder eine Audidatei. Frequenz und P
 Die in unserem Fall wichtigen Layer sind: 
 - Convolutional Layer
 - Max Pooling Layer
-- Flattening Layer
+- Flattening 
 - Dense Layer (Densely connected Layer)
 
 Dazwischen verbergen sich weitere Funktionen wie
@@ -97,7 +96,8 @@ Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobe
 ![Softmax-Function2](https://qph.fs.quoracdn.net/main-qimg-fda2f008df90ed5d7b6aff89b881e1ac.webp)
 
 ### MNIST Dataset
-
+Das MNIST Dataset ist eine Datenbank, in welcher sehr viele Bilder von handgeschriebenen Ziffern gespeichert sind.
+Diese besitzen die Größe von 28x28 Pixeln. Zu Beginn vom Cooden von KIs ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
 
 
 
