@@ -19,6 +19,8 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 8. Fazit
 ### 9. Quellen
 
+### [Arbeitsblog](https://github.com/LordKonstantin007/Arbeitsblog-)
+
 
 
 
