@@ -312,10 +312,11 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 ## Fazit
 ## Quellen
 
-### Download
+### Download Anaconda
 #### https://www.anaconda.com/distribution/
-#### ...
-### Keras#### https://keras.io/
+
+### Keras 
+#### https://keras.io/
 #### https://keras.io/datasets/
 #### https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
 #### https://keras.io/models/sequential/
