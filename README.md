@@ -281,6 +281,9 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 ## Fazit
 ## Quellen
 
+### Download
+#### https://www.anaconda.com/distribution/
+#### ...
 ### Keras
 #### https://keras.io/
 #### https://keras.io/datasets/
