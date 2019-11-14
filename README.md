@@ -299,6 +299,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### ...
 ### Keras#### https://keras.io/
 #### https://keras.io/datasets/
+#### https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
 #### https://keras.io/models/sequential/
 #### https://keras.io/layers/convolutional/
 #### https://keras.io/layers/core/
