@@ -236,7 +236,7 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 ![Biases+Weights](https://images.deepai.org/django-summernote/2019-06-03/e20ff932-4269-4bed-82fb-383b0f1ce96d.png)
 Beim Trainieren öffnet sich ein Ladebalken für jede Epoche, wobei zusätzlich die Genauigkeit und der Loss angegeben wird.
 Nachdem das Trainiern fertig war, ließ sich die Funktion der KI ausprobieren.
-![Training](images/Trained.PNG.png)
+![Training](images/Trained.PNG)
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 
 ### Optimizer
