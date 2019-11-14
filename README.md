@@ -78,7 +78,7 @@ f(x) = max(0,x)
 ![ReLU-Function](images/ReLU-Function.png)
 
 ### Sigmoid function
-Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funktion die dazu dient zu entscheiden ob ein Neuron aktiviert wird oder nicht. Bei Sigmoid kann das Neuron zwischen (1) und (0) sein. Deswegen kann man in seiner Koordinatenfunktion sehen, dass desto näher das Neuron an der (1) sich befindet, desto eher wird es aktiviert und entgegengesetzt mit der (0). Im Vergleich zur  ReLU Funktion ist sie weniger präzise.      
+Bei der Sigmoidfunktion wird der Output eines Neurons so verändert,dass dieser einen Wert zwischen (1) und (0) besitzen. Je näher der Wert an der (1) grenzt, desto eher wird das nächste Neuron aktiviert und entgegengesetzt in der Nähe von (0) deaktiviert.       
 
 ![Sigmoid-function-2 svg](https://user-images.githubusercontent.com/54355257/68784163-7214ed80-063c-11ea-9223-1ac9861a4f11.png)
 
@@ -86,7 +86,7 @@ Diese Aktivierungsfunktion von Sigmoid beschriebt mathematisch gesehen eine Funk
 
 
 ### Softmax function
-Benutzt man wenn man eine Klasssifikation durchführen will. Bei der Berechnung passiert es immer wieder das eine Eigenschaft (ein Ergebniss) die berechnet wird, nicht nur zur einer Klasse zugeordnet wird. Zum Beispiel man hat 26 Klassen. Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Das Neuron das für eine Klasse steht muss (1) anzeigen und alle anderen 25 Klassen (0).Jetzt passieren Fehler und plötzlich zeigen 2 oder 3 Neuronen eine (1). Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll und die überflüssigen deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Somit können KI's eine große Anzahl von verschiedenen Ergebnissen anzeigen, in dem Sinne viele Dinge in einem Bild erkennen.
+Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobei mehr als zwei Klassen vorhanden sind. Zum Beispiel hat man vier Klassen (a,b,c,d). Jede Klasse ist für ein bestimmtes Ergebniss vorhanden. Die Wahrscheinlichkeit die für eine Klasse steht muss (1=100%=Aktiviert) anzeigen und alle anderen 3 Klassen (0=0%=Deaktiviert). Unteranderem unterlaufen der KI Fehler, plötzlich weisen mehrere Klassen den Wert (1) auf. Durch die Softmax funktion wird bestimmt, dass nur ein Neuron aktiviert werden soll um die überflüssigen zu deaktivieren. Damit wird gegeben, das das Ergebniss nur zur einer Klasse definiert wird. Somit können KI's bspw. in Ziffern von 0-9 (MNIST Dataset: num_classes = 10) unterscheiden.
 
 ![Softmax-Function](images/Softmax-Function.png)
 ![Softmax-Function2](https://qph.fs.quoracdn.net/main-qimg-fda2f008df90ed5d7b6aff89b881e1ac.webp)
