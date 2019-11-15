@@ -5,6 +5,14 @@ Von Konstantin Reuschenbach 12g und Cyrus Szablowski 12g
 
 ![Keras-Logo](images/keras-logo.png)
 
+
+## Startguide
+
+
+
+
+
+
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
 
 KIs übernehmen Momentan eine Menge Arbeit im Industriebereich und deren Einsatzmöglichkeiten sind sehr divers.
