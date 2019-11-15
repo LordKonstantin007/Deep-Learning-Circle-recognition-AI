@@ -7,24 +7,25 @@ Von Konstantin Reuschenbach 12g und Cyrus Szablowski 12g
 
 
 ## Startguide
-Zunächst ist Der Code der KI ist in aitdc.py abgespeichert (lässt sich mit Python IDLE ablesen).
-Ausführen lässt sich der Script in einem virtuellen Envirement von Anaconda. 
-Also muss Anaconda installiert werden. Die Bilder mit dem Validationset und Testsset sind in data.zip gespeichert.
+Zunächst ist Der Code der KI ist in aitdc.py abgespeichert (kann man sich mit Python IDLE anzeigen lassen).
+Ausführen lässt sich der Skript in einem virtuellen Enviroment von Anaconda. 
+Also muss Anaconda zuerst installiert werden, die Libraries lassen sich über den Anaconda Launcher installieren. Die von uns genutzten Dependencies für keras und tensorflow sind in der req.txt Datei aufgelistet.
+Die Bilder mit dem Validationset und Testsset sind in data.zip gespeichert.
 Der extrahierte Data Ordner muss mit aitdc.py und den Testbildern in einem Ordner sein. Die Testbilder sind im Ordner Test gespeicher.
 Die Prediction läuft über output.py. Das Bild zum Aufbau unseres neuronalen Netzwerks haben wir mit utility.py erstellt, das Bild trägt den Namen model.png. In Model8.zip ist unser trainiertes neuronales Netzwerk gespeichert. 
-__Alle genannten Dinge in einem Ordner abspeichern, ansonsten verändern der Verzeichnisse.__
+Alle genannten Dinge in einem Ordner abspeichern, ansonsten verändern der Verzeichnisse.
 
 
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
 
-KIs übernehmen Momentan eine Menge Arbeit im Industriebereich und deren Einsatzmöglichkeiten sind sehr divers.
-Im generellen spricht man von Neuronalen Netzwerken, die wie ein Menschliches Gehirn durch das Lernen bestimmte Aufgaben übernehmen können. Solche Neuronale Netzwerke die Bestimmte Strukturen wiedererkennen sollen und dann bsp. einen Wert angeben, mit welcher Wahrscheinlichkeit, wie viele Kreise zu erkennen sind oder ob überhaupt welche vorhanden sind nennt man functional neural networks.
-Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnten. Weil KIs in unserer Gesellschaft immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen.
+KIs sorgen für Effizienz und Perfektion bei deren Anwendung, bereits im Industriebereich sind deren Einsatzmöglichkeiten sind sehr divers und etabliert. Im generellen spricht man von neuronalen Netzwerken, wobei der Name an ein menschliches Gehirn anspielt. Durch das Lernen bestimmter Dinge können KIs unsere Kapazitäten übersteigen. Solche neuronale Netzwerke die bestimmte Strukturen wiedererkennen sollen und dann bsp. einen Wert angeben, mit welcher Wahrscheinlichkeit ein Kreis, oder ein Viereck vorhanden ist nennt man functional neural networks.
+Bei der Bilderkennung, autonomen Fahren, Ki gesteuertes Computer spielen, personalisierter Werbung, Deepfakes, in der Medizin, in der Erzeugung von Kunstwerken, das Musizieren und vielen weiteren Anwendungsgebieten werden KIs eingesetzt. Weil KIs in unserer Gesellschaft eine immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen. Vorab ist noch zu betonen, dass KI´s nicht auf neuronalen Netzwerken basieren müssen (neuronales Netzwerk ≠ KI). 
+
 
 ### [Arbeitsblog](https://github.com/LordKonstantin007/Arbeitsblog-)
 
 ### 1. Programmauswahl
-### 2. Programme Instalieren
+### 2. Programme Installieren
 ### 3. Erlernen der Grundlagen von KI's
 ### 4. Aufbau und Code der KI
 ### 5. Trainieren einer KI
@@ -43,15 +44,17 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ## 1. Programmauswahl
 Zunächst haben wir uns gründlich informiert, welche Programme für das Programmieren von Ki's die einfachste Benutzung haben.
 
-Keras ist eine Open-Source-Library zum einfachen Programmieren von neuronalen Netzwerken, die sich über den Anaconda launcher mit leichtigkeit installieren lässt. Die zentralen Merkmale der Bibliothek sind Einfachheit, Erweiterbarkeit und Modularität. Neuronale Netze können mit den bereitgestellten Lösungen erstellt und konfiguriert werden, ohne dass man sich detailliert mit den zugrunde liegenden Backends beschäftigen muss. TensorFlow unterstützt Keras direkt in seiner Kernbibliothek. 
+Keras ist eine weitverbreitete Open-Source-Library im Bereich Machine Learning, die sich über den Anaconda launcher mit Leichtigkeit installieren lässt. Die zentralen Merkmale der Bibliothek sind Einfachheit, Erweiterbarkeit und Modularität. Neuronale Netze können mit den bereitgestellten Lösungen erstellt und konfiguriert werden, ohne dass man sich detailliert mit den zugrunde liegenden Backends beschäftigen muss. TensorFlow unterstützt Keras direkt in seiner Kernbibliothek. 
 
-Als Alternative gibt es Python und Scikit-learn. Wir haben uns letztenendes für Keras und Tensorflow entschieden. Tensorflow ist ein Framework fürs programmieren von KIs mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet. Fakt ist das diese Library unerlässlich für das Programmieren von KIs ist.
+Als Alternative gibt es Python und Scikit-learn. Wir haben uns letzten Endes für Keras und Tensorflow entschieden. Tensorflow ist ein Framework fürs programmieren von KIs mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet. Fakt ist, dass diese Library unerlässlich für das Programmieren von KIs ist.
+
 ## 2. Programme Instalieren
-Das Installieren war leider einer der Schwersten Herausforderungen und auch __sehr__ Zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider anfangs nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen, später haben wir den Fehler behoben. Am Pc zuhause war das coding jedoch immer vollständig möglich. Nebenbei haben wir Befehle für cmd gelernt.
+Das Installieren war leider eine der schwersten Herausforderungen und auch __sehr__ zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider anfangs nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen.
+Später haben wir den Fehler behoben. Am Pc zuhause war das coding jedoch immer vollständig möglich. Nebenbei haben wir Befehle für cmd gelernt.
 https://www.anaconda.com/distribution/
 
 ## 3. Erlernen der Grundlagen von KI's
-Die Kenntnis über die Funktionsweise und der Aufbau von Kis waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube und Internetadressen konnte viel Wissen mitgenommen werden.
+Die Kenntnis über die Funktionsweise und der Aufbau von Ki´s waren auch von großer Bedeutung, um überhaupt mit dem Programmieren anzufangen. Über Tutorials auf YouTube und Internetadressen konnte viel Wissen mitgenommen werden.
 Aufgelistet werden diese in unseren Quellen.
 
 ## 4. Aufbau und Code der KI
@@ -60,7 +63,7 @@ In unserem Fall programmieren wir ein CNN (Convolutional Neural Network). Diese 
 *Ein Convolutional Neural Network (auch „ConvNet“ genannt) ist in der Lage, Input in Form einer Matrix zu verarbeiten. Dies ermöglicht es, als Matrix dargestellte Bilder (Breite x Höhe x Farbkanäle) als Input zu verwenden. Ein normales neuronales Netz z.B. in Form eines Multi-Layer -Perceptrons (MLP) benötigt dagegen einen Vektor als Input, d.h. um ein Bild als Input zu verwenden, müssten die Pixel des Bildes in einer langen Kette hintereinander ausgerollt werden (Flattening). Dadurch sind normale neuronale Netze z.B. nicht in der Lage, Objekte in einem Bild unabhängig von der Position des Objekts im Bild zu erkennen. Das gleiche Objekt an einer anderen Position im Bild hätte einen völlig anderen Input-Vektor.*
 Quelle:https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 
-Ein Input ist Beispielsweise ein Bild, Video oder eine Audidatei. Frequenz und Pixel lassen sich durch Encoder in Zahlen darstellen. Mit diesen Zahlen wird im Endeffekt gerechnet. Eine KI kann man sich auch in Form einer komplizierten mathematischen Funktion vorstellen. Man gibt etwas in die Funktion hinein und bekommt etwas heraus. Das Ergebnis wird Im Output der KI angegeben. Zwischen Input und Output verbirgt sich die Struktur des Neuronalen Netzwerks. Diese Struktur lässt sich vergleichen mit einem menschlichen Gehirn. Neuronale Netzwerke bestehen aus verschiedenen Schichten (Layern). Diese besitzen eine Tiefe (Depth), deswegen spricht man auch vom Deep learning. Um die Kis effektiv trainiern zu können, verwendet man Aktivierungsfunktionen.
+Ein Input ist beispielsweise ein Bild, Video oder eine Audidatei. Frequenz und Pixel lassen sich durch Encoder in Zahlen darstellen. Mit diesen Zahlen wird im Endeffekt gerechnet. Eine KI kann man sich auch in Form einer komplizierten mathematischen Funktion vorstellen. Man gibt etwas in die Funktion hinein und bekommt etwas heraus. Das Ergebnis wird Im Output der KI angegeben. Zwischen Input und Output verbirgt sich die Struktur des neuronalen Netzwerks. Diese Struktur lässt sich vergleichen mit einem menschlichen Gehirn. Neuronale Netzwerke bestehen aus verschiedenen Schichten (Layern). Diese besitzen eine Tiefe (Depth), deswegen spricht man auch vom Deep learning. Um die Kis effektiv trainiern zu können, verwendet man Aktivierungsfunktionen.
 
 Die in unserem Fall wichtigen Layer sind: 
 - Convolutional Layer
@@ -117,7 +120,7 @@ https://keras.io/datasets/
 
 Als erstes brauchen wir den ImageDataGenerator, dieser erstellt mehrere Daten/Bilder aus einem Bild.
 Wir brauchen außerdem ein Sequentialmodel und kein functional API Model. 
-Außerdem brauchen wir Aktivierungsfunktionen damit das Neuronale Netzwerk Neuronen aktivieren und deaktivieren kann. 
+Außerdem brauchen wir Aktivierungsfunktionen damit das neuronale Netzwerk Neuronen aktivieren und deaktivieren kann. 
 Dropout ist wichtig damit zufällige Neuronen deaktiviert werden. Das ist wichtig, damit das Neuronale Netzwerk nicht overfitted/Überangepasst ist.
 Flatten ist notwendig um unsere 2D Daten in 1D Arrays zu konvertieren, denn nur mit Ihnen kann die KI rechnen. 
 Dense wird verwendet um ein Hidden Layer an unser Output Layer anzuhängen.
@@ -204,7 +207,7 @@ Der Hauptkörper unserer Struktur lässt sich in zwei Teile unterteilen. Am Anfa
 model = Sequential()
 ``` 
 Als erstes erstellen wir ein Objekt mit dem namen model.
-Durch model.add fügen wir dem Objekt, unserem Neuronalen Netzwerk eine Struktur zu. Als erstes nutzen wir ein Conv Layer, um bestimmte Features aus den Bildern extrahieren. Für jedes Bild werden 32 Features extrahiert. Die Größe der Suchenden Filter Matrizen haben dabei die Größe von 3x3, zusätzlich wird nochmals die Größe des Inputs angegeben.
+Durch model.add fügen wir dem Objekt, unserem neuronalen Netzwerk eine Struktur zu. Als erstes nutzen wir ein Conv Layer, um bestimmte Features aus den Bildern extrahieren. Für jedes Bild werden 32 Features extrahiert. Die Größe der Suchenden Filter Matrizen haben dabei die Größe von 3x3, zusätzlich wird nochmals die Größe des Inputs angegeben.
 Mit der Aktivierungsfunktion ReLU, normalisieren wir alle negativen Werte, sodass das folgende Neuron deaktiviert wird. 
 Darauf wird unser Bild auf die wichtigsten Informationen reduziert, indem das Bild mit MaxPooling verkleinert wird. Für alle 2x2 Felder im Bild werden die größten Werte in einem neuen kleineren Bild übertragen. Diese Schritte wiederholt die KI drei mal, wobei beim dritten Mal nach 64 Features auf dem Bild gesucht wird.
 
@@ -238,17 +241,17 @@ model.add(Activation('sigmoid'))
 ![CNN](https://jaai.de/wp-content/uploads/2018/02/Typical_cnn.png)
 
 ## 5. Trainieren einer KI 
-Für das Trainieren einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine Neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
-Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine Bestimmte Erkennung spezialisiert und nicht auf ein Bestimmtes Bild.
+Für das Trainieren (bei unserem Fall dem supervised learning) einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
+Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine bestimmte Erkennung spezialisiert und nicht auf ein bestimmtes Bild.
 Die zu Veränderende Werte in der KI sind Biases und Weights.
-Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
+Das neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
 ![Loss-and-Accuraccy](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Two-Circles-Binary-Classification-Problem.png)
 
 ### Biases und Weights
 Ein Gewicht repräsentiert die Stärke der Verbindung zwischen Neuronen. Wenn das Gewicht von Neuron 1 zu Neuron 2 größer ist, bedeutet dies, dass Neuron 1 einen größeren Einfluss auf Neuron 2 hat. Ein Gewicht verringert die Wichtigkeit des Eingabewerts. Gewichte nahe Null bedeuten, dass durch Ändern dieses Eingangs der Ausgang nicht geändert wird. Negative Gewichte bedeuten, dass durch Erhöhen dieser Eingabe die Ausgabe verringert wird. Ein Gewicht bestimmt deshalb, wie stark die Eingabe die Ausgabe beeinflusst. Diese Parameter bestimmen unteranderem, ob ein Folge Neuron aktiviert wird.
 
-Jedes Neuron besitzt ein Bias, somit gibt es eine große Anzahl von Beeinflussenden Zahlen im Neuronalen Netzwerk. Die Werte von den Biases werden genau wie die Weights durch die Optimizer, während des Backpropagation Prozesses geupdatet. Sie können zusätzlich bestimmen, ob ein Folgeneuron aktiviert/deaktiviert wird. Generell sind Biases insofern nützlich, dass sie die Flexibilität der KI beim Erkennen von Objekten erhöhen. Durch Normalisation können zum Beispiel ein Neuron deaktiviert werden, doch dadurch das der Output dieses Neurons ein Bias besitzt könnte er ein Folge Neuron aktivieren. Biases und Weights lassen sich jedoch in unserem Fall nicht Manuell für ein Neuron verändern, dies geschieht automatisch im Lern-prozess.
+Jedes Neuron besitzt ein Bias, somit gibt es eine große Anzahl von Beeinflussenden Zahlen im neuronalen Netzwerk. Die Werte von den Biases werden genau wie die Weights durch die Optimizer, während des Backpropagation Prozesses geupdatet. Sie können zusätzlich bestimmen, ob ein Folgeneuron aktiviert/deaktiviert wird. Generell sind Biases insofern nützlich, dass sie die Flexibilität der KI beim Erkennen von Objekten erhöhen. Durch Normalisation können zum Beispiel ein Neuron deaktiviert werden, doch dadurch das der Output dieses Neurons ein Bias besitzt könnte er ein Folge Neuron aktivieren. Biases und Weights lassen sich jedoch in unserem Fall nicht Manuell für ein Neuron verändern, dies geschieht automatisch im Lern-prozess.
 
 ![Biases+Weights](images/Bias+Weights.png)
 
@@ -370,7 +373,7 @@ Mit Testbild 11 lässt sich die KI einfach perfekt zusammenfassen:
 Die Dinge mit der wir sie trainiert haben kann sie gut erkennen, aber Kreise und Vierecke im allgemeinen nicht! Grund dafür ist, dass unsere Bilderdatenbank zu klein ist. Gäbe man der KI 10 000 oder 100.000 Bilder ist die Wahrscheinlichkeit, dass eine KI etwas richtig erkennt sehr hoch. Dabei müssen aber Werte wie epochs und batches richtig verändert werden, sodass die KI eine perfekte Angepasstheit bekommt. Dadurch würde aber auch der Trainingsprozess viel länger dauern, deshalb haben wir uns auf 1000 Bilder beschränkt.
 
 ## 8. Fazit
-Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausforderung wäre ein Cooles Ziel für ein anders Projekt. Dieses Projekt diente aber mehr dazu Grundverstänis zu Neuronalen Netzwerken zu gewinnen
+Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausforderung wäre ein Cooles Ziel für ein anders Projekt. Dieses Projekt diente aber mehr dazu Grundverstänis zu neuronalen Netzwerken zu gewinnen.
 
 ## 9. Quellen
 
