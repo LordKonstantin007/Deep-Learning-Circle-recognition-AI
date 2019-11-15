@@ -63,7 +63,7 @@ In unserem Fall programmieren wir ein CNN (Convolutional Neural Network). Diese 
 *Ein Convolutional Neural Network (auch „ConvNet“ genannt) ist in der Lage, Input in Form einer Matrix zu verarbeiten. Dies ermöglicht es, als Matrix dargestellte Bilder (Breite x Höhe x Farbkanäle) als Input zu verwenden. Ein normales neuronales Netz z.B. in Form eines Multi-Layer -Perceptrons (MLP) benötigt dagegen einen Vektor als Input, d.h. um ein Bild als Input zu verwenden, müssten die Pixel des Bildes in einer langen Kette hintereinander ausgerollt werden (Flattening). Dadurch sind normale neuronale Netze z.B. nicht in der Lage, Objekte in einem Bild unabhängig von der Position des Objekts im Bild zu erkennen. Das gleiche Objekt an einer anderen Position im Bild hätte einen völlig anderen Input-Vektor.*
 Quelle:https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 
-Ein Input ist beispielsweise ein Bild, Video oder eine Audidatei. Frequenz und Pixel lassen sich durch Encoder in Zahlen darstellen. Mit diesen Zahlen wird im Endeffekt gerechnet. Eine KI kann man sich auch in Form einer komplizierten mathematischen Funktion vorstellen. Man gibt etwas in die Funktion hinein und bekommt etwas heraus. Das Ergebnis wird Im Output der KI angegeben. Zwischen Input und Output verbirgt sich die Struktur des neuronalen Netzwerks. Diese Struktur lässt sich vergleichen mit einem menschlichen Gehirn. Neuronale Netzwerke bestehen aus verschiedenen Schichten (Layern). Diese besitzen eine Tiefe (Depth), deswegen spricht man auch vom Deep learning. Um die Kis effektiv trainiern zu können, verwendet man Aktivierungsfunktionen.
+Ein Input ist beispielsweise ein Bild, Video oder eine Audidatei. Frequenz und Pixel lassen sich durch Encoder in Zahlen darstellen. Mit diesen Zahlen wird im Endeffekt gerechnet. Eine KI kann man sich auch in Form einer komplizierten mathematischen Funktion vorstellen. Man gibt etwas in die Funktion hinein und bekommt etwas heraus. Das Ergebnis wird Im Output der KI angegeben. Zwischen Input und Output verbirgt sich die Struktur des neuronalen Netzwerks. Diese Struktur lässt sich vergleichen mit einem menschlichen Gehirn. Neuronale Netzwerke bestehen aus verschiedenen Schichten (Layern). Diese besitzen eine Tiefe (Depth), deswegen spricht man auch vom Deep learning. Um die Ki´s effektiv trainiern zu können, verwendet man Aktivierungsfunktionen.
 
 Die in unserem Fall wichtigen Layer sind: 
 - Convolutional Layer
@@ -77,29 +77,29 @@ Dazwischen verbergen sich weitere Funktionen wie
 - Softmax
 
 ### Convolutional Layer
-Sie können bestimmte Eigenschaften von Bildern in Testsets wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen in einer neuen Matrix gespeichert.
+Sie können bestimmte Eigenschaften von Bildern wiedererkennen. Dazu werden die Pixel in Zahlen umgewandelt, danach werden die Zahlen mit einem Filter (bzw. einer Feature Map) skalarmultipliziert. Die Ergebnisse werden zusammen in einer neuen Matrix gespeichert.
 
 ![Conv Layer](images/Convlayer.png)
 
 
 ### Max Pooling Layer
-Er reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist die relevantesten Signale an die nächsten Schichten weiter zu geben, den Inhalts abstrakter zu machen und die Anzahl der Parameter eines Netzes zu reduzieren.
+Diese Schicht reduziert die Datenmengen auf die Hälfte der vorherigen Größe (bei 2x2 Maxpooling), dabei werden nur das größte Ergebnis aus einem 2x2 Feld übernommen. Grund für die Verwendung ist die relevantesten Signale an die nächsten Schichten weiter zu geben, den Inhalts abstrakter zu machen und die Anzahl der Parameter eines Netzes zu reduzieren.
 
 ![Max Pooling Layer](images/MaxpoolSample2.png)
 
 ### Dense Layer und Flattening
 Beim Flattening Layer (Fully Connected Layer oder Dense Layer) handelt es sich um eine normale neuronale Netzstruktur, bei der alle Neuronen mit allen Inputs und allen Outputs verbunden sind. Um den Matrix-Output der Convolutional- und Pooling-Layer in einen Dense Layer speisen zu können, muss dieser zunächst ausgerollt werden (flattening). Die Output-Signale der Filter-Schichten sind unabhängig von der Position eines Objektes, daher sind zwar keine Positionsmerkmale mehr vorhanden, dafür aber ortsunabhängige Objektinformationen.
-Diese Objektinformationen werden also in einen oder mehrere Fully Connected Layer eingespeist und mit einem Output-Layer verbunden, welcher z.B. genau die Anzahl von Neuronen besitzt, die der Anzahl der verschiedenen zu erkennenden Klassen entspricht.
+Diese Objektinformationen werden in einen oder mehrere Fully Connected Layer eingespeist und mit einem Output-Layer verbunden, welcher zB. genau die Anzahl von Neuronen besitzt, die der Anzahl der verschiedenen zu erkennenden Klassen entspricht.
 ![Flattening](https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/73_blog_image_2.png)
 
 ### ReLU (rectified linear unit)
-Diese Aktivierungsfunktion ist wichtig für den Nomalization Process. Aktivierungsfunktionen können bestimmte Neuronen mit denen sie weiterverknüpft sind aktivieren (1) und deaktivieren (0). Hierbei werden negative Werte normalisiert, bzw. wird das Signal des Outputs so verändert, sodass das folgende Neuron deaktiviert wird. Zahlen größer als 0 bleiben gleich.
+Diese Aktivierungsfunktion ist wichtig für den Nomalisierungs Prozess. Aktivierungsfunktionen können bestimmte Neuronen mit denen sie weiterverknüpft sind aktivieren (1) und deaktivieren (0). Hierbei werden negative Werte normalisiert, bzw. wird das Signal des Outputs so verändert, sodass eventuell das folgende Neuron deaktiviert wird. Zahlen größer als 0 entsprechen ihrem Eingabewert.
 f(x) = max(0,x)
 
 ![ReLU-Function](images/ReLU-Function.png)
 
 ### Sigmoid function
-Bei der Sigmoidfunktion wird der Output eines Neurons so verändert,dass dieser einen Wert zwischen (1) und (0) besitzen. Je näher der Wert an der (1) grenzt, desto eher wird das nächste Neuron aktiviert und entgegengesetzt in der Nähe von (0) deaktiviert.       
+Bei der Sigmoidfunktion wird der Output eines Neurons so verändert, dass dieser einen Wert zwischen (1) und (0) besitzen. Je näher der Wert an der (1) grenzt, desto eher wird das nächste Neuron aktiviert und entgegengesetzt in der Nähe von (0) deaktiviert.       
 
 ![Sigmoid-function-2 svg](https://user-images.githubusercontent.com/54355257/68784163-7214ed80-063c-11ea-9223-1ac9861a4f11.png)
 
@@ -111,7 +111,7 @@ Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobe
 
 ### MNIST Dataset
 Das MNIST Dataset ist eine Datenbank, in welcher sehr viele Bilder von handgeschriebenen Ziffern gespeichert sind.
-Diese besitzen die Größe von 28x28 Pixeln. Zu Beginn vom Cooden von KI´s ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
+Diese besitzen die Größe von 28x28 Pixeln. Vorm Beginn des Cooden von KI´s ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
 
 ![MNIST](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 https://keras.io/datasets/
@@ -121,10 +121,10 @@ https://keras.io/datasets/
 Als erstes brauchen wir den ImageDataGenerator, dieser erstellt mehrere Daten/Bilder aus einem Bild.
 Wir brauchen außerdem ein Sequentialmodel und kein functional API Model. 
 Außerdem brauchen wir Aktivierungsfunktionen damit das neuronale Netzwerk Neuronen aktivieren und deaktivieren kann. 
-Dropout ist wichtig damit zufällige Neuronen deaktiviert werden. Das ist wichtig, damit das Neuronale Netzwerk nicht overfitted/Überangepasst ist.
+Dropout ist wichtig damit zufällige Neuronen deaktiviert werden. Das ist wichtig, damit das Neuronale Netzwerk nicht overfitted/überangepasst ist.
 Flatten ist notwendig um unsere 2D Daten in 1D Arrays zu konvertieren, denn nur mit Ihnen kann die KI rechnen. 
 Dense wird verwendet um ein Hidden Layer an unser Output Layer anzuhängen.
-Außerdem verwenden wir natürlich Keras und Numpy. Numpy verwenden wir um unsere Arrays zu manipulieren, damit wir einfach unsere Ergebnisse in Arrays anzeigen können.
+Außerdem verwenden wir natürlich Keras und Numpy. Numpy verwenden wir um unsere Arrays zu manipulieren, oder damit wir einfach unsere Ergebnisse in Arrays anzeigen können.
 Zu guter letzt brauchen wir keras.preprocessing import image, damit unsere Bilder importieren und vorverarbeiten können.
 
 ```
@@ -158,8 +158,8 @@ batch_size = 20
 ``` 
 
 Als nächstes müssen wir klarstellen, dass unsere Bilder im Input die richtige Form haben (channels, height, width/3x200x200) oder ( height, width,channels/200x200x3). 
-Mit Channels sind bei uns die RGB Farben gemeint. Da alle Farben von Pixeln durch drei RGB-Werte definiert sind, sprechen wir bei Bildern von 3 Kanälen/Channels. 
-Mit train_datagen = ImageDataGenerator erstellen wir ein noch größeres Dataset fürs Trainieren,dabei entstehen weit mehr als unseren ursprünglichen 1000 Bildern, diese sind jedoch nicht aufrufbar, es gibt aber Tools, mitwelchen man sich die von KI´s veerarbeiteten Bilder anschauen kann.
+Mit Channels sind bei uns die RGB Farben gemeint. Da alle Farben von Pixeln durch drei RGB-Werte definiert sind, sprechen wir von Bildern mit 3 Farbkanälen/Channels. 
+Mit train_datagen = ImageDataGenerator erstellen wir ein noch größeres Dataset fürs Trainieren,dabei entstehen weit mehr als unseren ursprünglichen 1000 Bildern, diese sind jedoch nicht aufrufbar, es gibt aber Tools, mitwelchen man sich die von KI´s verarbeiteten Bilder anschauen kann.
 Mit rescale Skalieren/Multiplizieren wir die Daten um den Faktor 1/255, bevor wie sie weiter verarbeiten. Die shear_range gibt die Scherintensität an also der Scherwinkel gegen den Urzeigersinn in Grad, mit welchem das Bild verzogen wird (siehe Scherung bei der Geometrie). Die zoom_range steht für das zufällig auftretende Reinzoomen von Bildern.
 horizontal_flip dient zum zufälligen Spiegeln der Hälfte der Bilder in horizontaler Richtung. Beim Testen wird auch ein weiterer Datensatz erstellt der die Bilder nur Neuskaliert, bzw. mit dem Faktor 1/255 multipliziert.
 
@@ -201,7 +201,7 @@ validation_generator = test_datagen.flow_from_directory(
 
 
 ### Aufbau des ConvNets
-Der Hauptkörper unserer Struktur lässt sich in zwei Teile unterteilen. Am Anfang steht das Convolutioning im Vordergrund bzw. das Feature Extracting und am Ende das Klassifizieren. Zunächst verwnden wir ein Conv Layer, die ReLU Aktivierungsfuktion und ein Maxpooling-Layer. Diese Aufeinanderreihung der Schichten/Operationen machen im wesentlichen die Struktur von CNNs aus.
+Der Hauptkörper unserer Struktur lässt sich in zwei Teile unterteilen. Am Anfang steht das Convolutioning im Vordergrund bzw. das Feature Extracting und am Ende das Klassifizieren. Zunächst verwnden wir ein Conv Layer, die ReLU Aktivierungsfuktion und ein Maxpooling-Layer. Diese Aufeinanderreihung der Schichten/Operationen machen im wesentlichen die Struktur des CNNs aus.
 
 #### Feature Extracting
 ``` 
@@ -229,7 +229,8 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 ``` 
 
 #### Classification
-Aus unseren vielen kleinen 2 dimensionalen Feature Maps, erstellen wir durch Flatten 1 dimensionale Bilder. Danach verwenden wir Dense mit den Wert an der Anzahl von vorhandenen Featuremaps pro Bild (64). model.add(Dense(1)) wird zu unserem Letzten Output, dieser gibt einen Wert an eien Sigmois Funktion, diese gibt einen Output von 0 oder 1. Also ob es sich um ein Kreis oder Viereck handelt.
+Aus unseren vielen kleinen 2 dimensionalen Feature Maps, erstellen wir durch Flatten 1 dimensionale Bilder. Danach verwenden wir Dense mit den Wert mit der Anzahl von vorhandenen Featuremaps pro Bild (64).
+model.add(Dense(1)) wird zu unserem letzten Output, dieser gibt einen Wert an eine Sigmoid Funktion, diese gibt einen Output von 0 oder 1. Also ob es sich um ein Kreis oder Viereck handelt.
  
 ``` 
 model.add(Flatten())
@@ -243,8 +244,8 @@ model.add(Activation('sigmoid'))
 
 ## 5. Trainieren einer KI 
 Für das Trainieren (bei unserem Fall dem supervised learning) einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
-Deswegen ist das Trainieren von KI´s wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine bestimmte Erkennung spezialisiert und nicht auf ein bestimmtes Bild.
-Die zu Veränderende Werte in der KI sind Biases und Weights.
+Deswegen ist das Trainieren von KI´s wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine bestimmte Erkennung spezialisiert und nicht auf ein bestimmtes Bild.
+Die zu veränderende Werte in der KI sind Biases und Weights.
 Das neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
 ![Loss-and-Accuraccy](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Two-Circles-Binary-Classification-Problem.png)
@@ -252,7 +253,7 @@ Das neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 ### Biases und Weights
 Ein Gewicht repräsentiert die Stärke der Verbindung zwischen Neuronen. Wenn das Gewicht von Neuron 1 zu Neuron 2 größer ist, bedeutet dies, dass Neuron 1 einen größeren Einfluss auf Neuron 2 hat. Ein Gewicht verringert die Wichtigkeit des Eingabewerts. Gewichte nahe Null bedeuten, dass durch Ändern dieses Eingangs der Ausgang nicht geändert wird. Negative Gewichte bedeuten, dass durch Erhöhen dieser Eingabe die Ausgabe verringert wird. Ein Gewicht bestimmt deshalb, wie stark die Eingabe die Ausgabe beeinflusst. Diese Parameter bestimmen unteranderem, ob ein Folge Neuron aktiviert wird.
 
-Jedes Neuron besitzt ein Bias, somit gibt es eine große Anzahl von Beeinflussenden Zahlen im neuronalen Netzwerk. Die Werte von den Biases werden genau wie die Weights durch die Optimizer, während des Backpropagation Prozesses geupdatet. Sie können zusätzlich bestimmen, ob ein Folgeneuron aktiviert/deaktiviert wird. Generell sind Biases insofern nützlich, dass sie die Flexibilität der KI beim Erkennen von Objekten erhöhen. Durch Normalisation können zum Beispiel ein Neuron deaktiviert werden, doch dadurch das der Output dieses Neurons ein Bias besitzt könnte er ein Folge Neuron aktivieren. Biases und Weights lassen sich jedoch in unserem Fall nicht Manuell für ein Neuron verändern, dies geschieht automatisch im Lern-prozess.
+Jedes Neuron besitzt ein Bias, somit gibt es eine große Anzahl von beeinflussenden Zahlen im neuronalen Netzwerk. Die Werte von den Biases werden genau wie die Weights durch die Optimizer, während des Backpropagation Prozesses geupdatet. Sie können zusätzlich bestimmen, ob ein Folgeneuron aktiviert/deaktiviert wird. Generell sind Biases insofern nützlich, dass sie die Flexibilität der KI beim Erkennen von Objekten erhöhen. Durch Normalisation können zum Beispiel ein Neuron deaktiviert werden, doch dadurch das der Output dieses Neurons ein Bias besitzt könnte er ein Folge Neuron aktivieren. Biases und Weights lassen sich jedoch in unserem Fall nicht Manuell für ein Neuron verändern, dies geschieht automatisch im Lern Prozess.
 
 ![Biases+Weights](images/Bias+Weights.png)
 
@@ -262,11 +263,11 @@ Nachdem das Trainiern fertig war, ließ sich die Funktion der KI ausprobieren.
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 
 ### Optimizer
-Während des Trainings optimieren und ändern wir die Parameter (Gewichte) unseres Modells, um unseren Loss zu minimieren und unsere Vorhersagen so korrekt wie möglich zu machen. Aber wie genau machst du das? Wie und wann ändern Sie die Parameter Ihres Modells?
+Während des Trainings optimieren und ändern wir die Parameter (Gewichte) unseres Modells, um unseren Loss zu minimieren und unsere Vorhersagen so korrekt wie möglich zu machen. Aber wie genau macht man das? Wie und wann ändernt man die Parameter eines Modells?
 
-Hier kommen Optimierer ins Spiel . Sie verknüpfen die Loss funktion und die Modellparameter, indem sie das Modell als Reaktion auf die Ausgabe der Verlustfunktion aktualisieren. Einfacher ausgedrückt: Optimierer formen und formen Ihr Modell in die genaueste Form, indem sie den Wert der Gewichten verändern. Der Optimizer mitteilt regelt den Trainingsprozess, damit die Gewichte so verändert werden, dass der Loss-Wert sinkt und die Genauigkeit steigt.
+Hier kommen Optimierer ins Spiel. Sie verknüpfen die Loss funktion und die Modellparameter, indem sie das Modell als Reaktion auf die Ausgabe der Verlustfunktion aktualisieren. Einfacher ausgedrückt: Optimierer formen und formen das Modell in die genaueste Form, indem sie den Wert der Gewichten und Biases verändern. Der Optimizer regelt den Trainingsprozess, damit die Gewichte so verändert werden, dass der Loss-Wert sinkt und die Genauigkeit steigt.
 
-Die Hyperparameter der KI kann man sich auch in einem Hyperdimensionalen Raum vorstellen (feature Space). Die Optimizer versuchen zu Beginn am Training an einem Maxium auf ein Minimum zu treffen. Den schnellsten/steilsten Weg bestimmen hier die verschiedenen Optimizer.
+Die Hyperparameter der KI kann man sich auch in einem Hyperdimensionalen Raum vorstellen (feature Space). Die Optimizer versuchen zu Beginn am Training von einem Maxium auf ein Minimum zu treffen. Den schnellsten/steilsten Weg bestimmen hier die verschiedenen Optimizer, sodass die KI schnellst möglich optimiert wird.
 
 
 ![Feature Space](https://blog.paperspace.com/content/images/2018/05/convex_cost_function.jpg)
@@ -341,16 +342,16 @@ img_pred = image.img_to_array(img_pred)
 img_pred = np.expand_dims(img_pred, axis = 0)
 ```
 Das oben zu erattende Bild wird als Ergebnis definiert, dieses Ergebnis wird in der Konsole angezeigt.
-Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Kreis handelt.
-Ist das Ergebnis nicht 1, so handelt es sich um ein Viereck.
+Es sollte zwischen 0 und 1 liegen. Wenn das Ergebnis gleich 1 ist, soll die Konsole sagen, dass es es sich um ein Viereck handelt.
+Ist das Ergebnis nicht 1, so handelt es sich um ein Kreis.
 __Wichtig!__ Erst nach dem Trainieren den Test Ordner in den Validationset Ordner packen!
 ```
 rslt = model.predict(img_pred)
 print (rslt)
 if rslt[0][0] == 1:
-     prediction = "Kreis"
+     prediction = "Viereck"
 else:
-     prediction = "Viereck"    
+     prediction = "Kreis"    
 print (prediction) 
 ```
 Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
@@ -407,7 +408,7 @@ Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KI´s eventuell, 
 
 
 
-### You Tube Videos + Playlist
+### You Tube Playlist
 #### https://www.youtube.com/playlist?list=PLZbbT5o_s2xq7LwI2y8_QtvuXZedL6tQU
 #### https://www.youtube.com/watch?v=RznKVRTFkBY&list=PLZbbT5o_s2xrwRnXk_yCPtnqqo4_u2YGL
 #### https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
@@ -418,9 +419,6 @@ Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KI´s eventuell, 
 #### https://www.youtube.com/watch?v=oOSXQP7C7ck
 #### https://www.youtube.com/watch?v=FmpDIaiMIeA
 #### https://www.youtube.com/watch?v=XNKeayZW4dY&t=894s
-
-
-
 
 
 ### Coole Videos zu KI´s
