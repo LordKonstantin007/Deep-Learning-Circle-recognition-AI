@@ -353,8 +353,15 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### ![Test10](images/test10.png) Testbild10 erkannt als Kreis
 #### ![Test11](images/test11.png) Testbild11 erkannt als Kreis
 
+Weil die Trainierte KI alle Bilder im Validationset 100% richtig bestimmt, haben wir uns überlegt ein paar eigene Testbilder zu machen und diese durch die KI zu erraten. Besonders interessant ist das Ergebnis für Testbild 5,8,9,10,11.
+Bild 9 ähnelt einem Kreis eher als Bild 5, weil es zwei senkrechte Ecken besitzt. Dennoch wird 5 als Viereck und 9 als Kreis erkannt.
+Bild 10 lässt sich eigenlich auch einfach erklären. Dadurch, dass alle unsere Bilder Schwarze Objekte auf weißem Hintegrund waren, ist unsere KI auf die äußeren Katen des Kreisen spezialisiert, somit spielt es keine Rolle, dass ein weißes Viereck im Bild vorhanden ist.
+Mit Testbild 11 lässt sich die KI einfach perfekt zusammenfassen:
+Die Dinge mit der wir sie trainiert haben kann sie gut erkennen, aber Kreise und Vierecke im allgemeinen nicht! Grund dafür ist, dass unsere Bilderdatenbank zu klein ist. Gäbe man der KI 10 000 oder 100.000 Bilder ist die Wahrscheinlichkeit, dass eine KI etwas richtig erkennt sehr hoch. Dabei müssen aber Werte wie epochs und batches richtig verändert werden, sodass die KI eine perfekte Angepasstheit bekommt. Dadurch würde aber auch der Trainingsprozess viel länger dauern, deshalb haben wir uns auf 1000 Bilder beschränkt.
 
 ## 8. Fazit
+Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausfprderung wäre ein Cooles Ziel für ein anders Projekt.
+
 ## 9. Quellen
 
 ### Download Anaconda
@@ -381,6 +388,7 @@ Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hat
 #### https://www.tensorflow.org/
 #### https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
 #### https://www.quora.com/How-does-softmax-function-work-in-AI-field
+#### https://hackernoon.com/everything-you-need-to-know-about-neural-networks-8988c3ee4491
 #### https://algorithmia.com/blog/introduction-to-optimizers
 
 
