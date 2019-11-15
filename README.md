@@ -237,7 +237,7 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 
 ### Biases und Weights
 
-![Biases+Weights](images/bias_weights.png)
+![Biases+Weights](images/Bias+Weights.png)
 Beim Trainieren öffnet sich ein Ladebalken für jede Epoche, wobei zusätzlich die Genauigkeit und der Loss angegeben wird.
 Nachdem das Trainiern fertig war, ließ sich die Funktion der KI ausprobieren.
 ![Training](images/Trained.PNG)
