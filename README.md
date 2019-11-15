@@ -18,8 +18,8 @@ Alle genannten Dinge in einem Ordner abspeichern, ansonsten verändern der Verze
 
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
 
-KIs sorgen für Effizienz und Perfektion bei deren Anwendung, bereits im Industriebereich sind deren Einsatzmöglichkeiten sind sehr divers und etabliert. Im generellen spricht man von neuronalen Netzwerken, wobei der Name an ein menschliches Gehirn anspielt. Durch das Lernen bestimmter Dinge können KIs unsere Kapazitäten übersteigen. Solche neuronale Netzwerke die bestimmte Strukturen wiedererkennen sollen und dann bsp. einen Wert angeben, mit welcher Wahrscheinlichkeit ein Kreis, oder ein Viereck vorhanden ist nennt man functional neural networks.
-Bei der Bilderkennung, autonomen Fahren, Ki gesteuertes Computer spielen, personalisierter Werbung, Deepfakes, in der Medizin, in der Erzeugung von Kunstwerken, das Musizieren und vielen weiteren Anwendungsgebieten werden KIs eingesetzt. Weil KIs in unserer Gesellschaft eine immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen. Vorab ist noch zu betonen, dass KI´s nicht auf neuronalen Netzwerken basieren müssen (neuronales Netzwerk ≠ KI). 
+KI´s sorgen für Effizienz und Perfektion bei deren Anwendung, bereits im Industriebereich sind deren Einsatzmöglichkeiten sind sehr divers und etabliert. Im generellen spricht man von neuronalen Netzwerken, wobei der Name an ein menschliches Gehirn anspielt. Durch das Lernen bestimmter Dinge können KI´s unsere Kapazitäten übersteigen. Solche neuronale Netzwerke die bestimmte Strukturen wiedererkennen sollen und dann bsp. einen Wert angeben, mit welcher Wahrscheinlichkeit ein Kreis, oder ein Viereck vorhanden ist nennt man functional neural networks.
+Bei der Bilderkennung, autonomen Fahren, Ki gesteuertes Computer spielen, personalisierter Werbung, Deepfakes, in der Medizin, in der Erzeugung von Kunstwerken, das Musizieren und vielen weiteren Anwendungsgebieten werden KI´s eingesetzt. Weil KI´s in unserer Gesellschaft eine immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen. Vorab ist noch zu betonen, dass KI´s nicht auf neuronalen Netzwerken basieren müssen (neuronales Netzwerk ≠ KI). 
 
 
 ### [Arbeitsblog](https://github.com/LordKonstantin007/Arbeitsblog-)
@@ -46,7 +46,7 @@ Zunächst haben wir uns gründlich informiert, welche Programme für das Program
 
 Keras ist eine weitverbreitete Open-Source-Library im Bereich Machine Learning, die sich über den Anaconda launcher mit Leichtigkeit installieren lässt. Die zentralen Merkmale der Bibliothek sind Einfachheit, Erweiterbarkeit und Modularität. Neuronale Netze können mit den bereitgestellten Lösungen erstellt und konfiguriert werden, ohne dass man sich detailliert mit den zugrunde liegenden Backends beschäftigen muss. TensorFlow unterstützt Keras direkt in seiner Kernbibliothek. 
 
-Als Alternative gibt es Python und Scikit-learn. Wir haben uns letzten Endes für Keras und Tensorflow entschieden. Tensorflow ist ein Framework fürs programmieren von KIs mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet. Fakt ist, dass diese Library unerlässlich für das Programmieren von KIs ist.
+Als Alternative gibt es Python und Scikit-learn. Wir haben uns letzten Endes für Keras und Tensorflow entschieden. Tensorflow ist ein Framework fürs programmieren von KI´s mit Python und C++. Erstellt wurde es von Google und es wird auch von allen Google Diensten verwendet. Fakt ist, dass diese Library unerlässlich für das Programmieren von KI´s ist.
 
 ## 2. Programme Instalieren
 Das Installieren war leider eine der schwersten Herausforderungen und auch __sehr__ zeitaufwendig. Die verschiedenen Installationswege verwirrten und die Einrichtung von Python fehlte. Man ist immer wieder auf Probleme gestoßen. Über den Python Addon Installer Anaconda lief die Installation mehr oder wenig reibungslos. Das Nutzen der Software innerhalb des Schulunterrichts, war leider anfangs nicht möglich, bzw. das Ausführen des Codes, weil  essentielle Teile der KI sich im Programm nicht aufbauen ließen.
@@ -58,7 +58,7 @@ Die Kenntnis über die Funktionsweise und der Aufbau von Ki´s waren auch von gr
 Aufgelistet werden diese in unseren Quellen.
 
 ## 4. Aufbau und Code der KI
-In unserem Fall programmieren wir ein CNN (Convolutional Neural Network). Diese sind insofern sinvoll, dass sie in der Lage sind Teile auf einem Bild durch bestimmte Filter zu erkennen. Deswegen werden CNNs insbesonders in der Bilderkennung verwendet. 
+In unserem Fall programmieren wir ein CNN (Convolutional Neural Network). Diese sind insofern sinvoll, dass sie in der Lage sind Teile/Features auf einem Bild durch bestimmte Filter zu erkennen. Deswegen werden CNNs insbesonders für Bilderkennung verwendet. 
 
 *Ein Convolutional Neural Network (auch „ConvNet“ genannt) ist in der Lage, Input in Form einer Matrix zu verarbeiten. Dies ermöglicht es, als Matrix dargestellte Bilder (Breite x Höhe x Farbkanäle) als Input zu verwenden. Ein normales neuronales Netz z.B. in Form eines Multi-Layer -Perceptrons (MLP) benötigt dagegen einen Vektor als Input, d.h. um ein Bild als Input zu verwenden, müssten die Pixel des Bildes in einer langen Kette hintereinander ausgerollt werden (Flattening). Dadurch sind normale neuronale Netze z.B. nicht in der Lage, Objekte in einem Bild unabhängig von der Position des Objekts im Bild zu erkennen. Das gleiche Objekt an einer anderen Position im Bild hätte einen völlig anderen Input-Vektor.*
 Quelle:https://jaai.de/convolutional-neural-networks-cnn-aufbau-funktion-und-anwendungsgebiete-1691/
@@ -111,7 +111,7 @@ Die Softmaxfunktion benutzt man wenn man eine Klasssifikation durchführen, wobe
 
 ### MNIST Dataset
 Das MNIST Dataset ist eine Datenbank, in welcher sehr viele Bilder von handgeschriebenen Ziffern gespeichert sind.
-Diese besitzen die Größe von 28x28 Pixeln. Zu Beginn vom Cooden von KIs ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
+Diese besitzen die Größe von 28x28 Pixeln. Zu Beginn vom Cooden von KI´s ist es so gesehen eine Pflicht sich das MNIST Dataset anzuschauen bzw. eine KI damit zu trainieren. Dadurch lernt man auch praktisch sehr viel.
 
 ![MNIST](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 https://keras.io/datasets/
@@ -140,7 +140,8 @@ from keras.preprocessing import image
 ### Image Preprocessing:
 
 Als erstes müssen die Bilder unseres Datasets gelesen werden können. Dazu geben wir die Größe (width & height) des Bildes und die Directories für das Trainings- und Validationset als Variable an.
-Außerdem definieren wir die Größe des Datensatzes, also wieviele Bilder wir für das Trainieren bereitstellen. Normalerweise gibt man KIs viel mehr Bilder als es bei uns der Fall mit 1000 sind. Doch je größer so ein Datensatz ist, desto länger dauert auch das Training, dafür ist die KI im Erkennen noch präziser.
+Außerdem definieren wir die Größe des Datensatzes, also wieviele Bilder wir für das Trainieren bereitstellen. Normalerweise gibt man 
+KI´s viel mehr Bilder als es bei uns der Fall mit 1000 sind. Doch je größer so ein Datensatz ist, desto länger dauert auch das Training, dafür ist die KI im Erkennen noch präziser.
 Ein kompletter Trainingsdurchlauf aller Input-Daten wird dabei jeweils als Epoche bezeichnet.
 Je öfter man eine KI mit dem selben Datensatz trainiert, also je größer die Epochenanzahl, desto besser passt sich die KI der Bilder an. Dabei steigt die Genauigkeit und es sinkt die Lossrate. Epochen lassen sich zusätzlich in Batches einteilen. 
 Wenn alle Batches das neuronale Netz ein Mal durchlaufen haben, ist eine Epoche vollendet. Unsere batch_size ist ein Hyperparameter der beim Trainieren die Anzahl von Samples bestimmt die durch die KI laufen, bevor ihre Parameter (Biases, Weights) geupdated werden.
@@ -158,7 +159,7 @@ batch_size = 20
 
 Als nächstes müssen wir klarstellen, dass unsere Bilder im Input die richtige Form haben (channels, height, width/3x200x200) oder ( height, width,channels/200x200x3). 
 Mit Channels sind bei uns die RGB Farben gemeint. Da alle Farben von Pixeln durch drei RGB-Werte definiert sind, sprechen wir bei Bildern von 3 Kanälen/Channels. 
-Mit train_datagen = ImageDataGenerator erstellen wir ein noch größeres Dataset fürs Trainieren,dabei entstehen weit mehr als unseren ursprünglichen 1000 Bildern, diese sind jedoch nicht aufrufbar, es gibt aber Tools, mitwelchen man sich die von KIs veerarbeiteten Bilder anschauen kann.
+Mit train_datagen = ImageDataGenerator erstellen wir ein noch größeres Dataset fürs Trainieren,dabei entstehen weit mehr als unseren ursprünglichen 1000 Bildern, diese sind jedoch nicht aufrufbar, es gibt aber Tools, mitwelchen man sich die von KI´s veerarbeiteten Bilder anschauen kann.
 Mit rescale Skalieren/Multiplizieren wir die Daten um den Faktor 1/255, bevor wie sie weiter verarbeiten. Die shear_range gibt die Scherintensität an also der Scherwinkel gegen den Urzeigersinn in Grad, mit welchem das Bild verzogen wird (siehe Scherung bei der Geometrie). Die zoom_range steht für das zufällig auftretende Reinzoomen von Bildern.
 horizontal_flip dient zum zufälligen Spiegeln der Hälfte der Bilder in horizontaler Richtung. Beim Testen wird auch ein weiterer Datensatz erstellt der die Bilder nur Neuskaliert, bzw. mit dem Faktor 1/255 multipliziert.
 
@@ -242,7 +243,7 @@ model.add(Activation('sigmoid'))
 
 ## 5. Trainieren einer KI 
 Für das Trainieren (bei unserem Fall dem supervised learning) einer KI nutzt man Backpropagation. Aber warum überhaupt das Training. Am Anfang ist eine neuronales Netzwerk auf nichts spezialisiert, das Bedeutet das die KI nicht einer Funktion nachgehen kann, weil sie Dinge die sie erkennen soll nicht erkennt.
-Deswegen ist das Trainieren von KIs wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine bestimmte Erkennung spezialisiert und nicht auf ein bestimmtes Bild.
+Deswegen ist das Trainieren von KI´s wichtig. Jedoch muss aufgepasst werden, dass die KI nicht overfitted oder underfitted ist. Das Bedeutet, dass die KI nicht immer das selbe Bild sieht und eine richtige Antwort gibt, sondern das verschiedene wesentliche Strukturen von Bildern erkannt werden. Somit ist die KI auf eine bestimmte Erkennung spezialisiert und nicht auf ein bestimmtes Bild.
 Die zu Veränderende Werte in der KI sind Biases und Weights.
 Das neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann man durch das Training möglichst erniedrigen, sodass die Genauigkeit (accuracy) steigt. Gleichzeitig versucht man den Losswert möglichst gering zuhalten, dafür gibt es verschiedene Optimierungmethoden. (Optimizer)
 
@@ -373,7 +374,7 @@ Mit Testbild 11 lässt sich die KI einfach perfekt zusammenfassen:
 Die Dinge mit der wir sie trainiert haben kann sie gut erkennen, aber Kreise und Vierecke im allgemeinen nicht! Grund dafür ist, dass unsere Bilderdatenbank zu klein ist. Gäbe man der KI 10 000 oder 100.000 Bilder ist die Wahrscheinlichkeit, dass eine KI etwas richtig erkennt sehr hoch. Dabei müssen aber Werte wie epochs und batches richtig verändert werden, sodass die KI eine perfekte Angepasstheit bekommt. Dadurch würde aber auch der Trainingsprozess viel länger dauern, deshalb haben wir uns auf 1000 Bilder beschränkt.
 
 ## 8. Fazit
-Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausforderung wäre ein Cooles Ziel für ein anders Projekt. Dieses Projekt diente aber mehr dazu Grundverstänis zu neuronalen Netzwerken zu gewinnen.
+Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KI´s eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausforderung wäre ein Cooles Ziel für ein anders Projekt. Dieses Projekt diente aber mehr dazu Grundverstänis zu neuronalen Netzwerken zu gewinnen.
 
 ## 9. Quellen
 
@@ -422,7 +423,7 @@ Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, so
 
 
 
-### Coole Videos zu KIs
+### Coole Videos zu KI´s
 #### https://www.youtube.com/watch?v=UWxfnNXlVy8&t=666s
 #### https://www.youtube.com/watch?v=qv6UVOQ0F44
 #### https://www.youtube.com/watch?v=zIkBYwdkuTk
