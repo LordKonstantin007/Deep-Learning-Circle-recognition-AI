@@ -11,7 +11,8 @@ Zunächst ist Der Code der KI ist in aitdc.py abgespeichert (lässt sich mit Pyt
 Ausführen lässt sich der Script in einem virtuellen Envirement von Anaconda. 
 Also muss Anaconda installiert werden. Die Bilder mit dem Validationset und Testsset sind in data.zip gespeichert.
 Der extrahierte Data Ordner muss mit aitdc.py und den Testbildern in einem Ordner sein. Die Testbilder sind im Ordner Test gespeicher.
-Die Prediction läuft über output.py. Das Bild zum Aufbau unseres neuronalen Netzwerks haben wir mit utility.py erstellt, das Bild trägt den Namen model.png. In Model8.h5 ist unser trainiertes neuronales Netzwerk gespeichert. Alle genannten Dinge in einem Ordner abspeichern, ansonsten verändern der Verzeichnisse.
+Die Prediction läuft über output.py. Das Bild zum Aufbau unseres neuronalen Netzwerks haben wir mit utility.py erstellt, das Bild trägt den Namen model.png. In Model8.zip ist unser trainiertes neuronales Netzwerk gespeichert. 
+__Alle genannten Dinge in einem Ordner abspeichern, ansonsten verändern der Verzeichnisse.__
 
 
 ## Warum wir uns für die Programmierung von einer KI entschieden haben:
