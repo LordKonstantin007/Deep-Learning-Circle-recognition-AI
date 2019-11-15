@@ -320,7 +320,7 @@ def do():
 ```
 ![Dataset](images/Dataset.PNG) 
            
-https://stackoverflow.com/questions/8155060/moving-specific-files-in-subdirectories-into-a-directory-python
+
 
 
 ## 7. Daten Erratung und Analysing
