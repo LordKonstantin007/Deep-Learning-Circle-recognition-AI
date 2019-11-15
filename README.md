@@ -370,7 +370,7 @@ Mit Testbild 11 lässt sich die KI einfach perfekt zusammenfassen:
 Die Dinge mit der wir sie trainiert haben kann sie gut erkennen, aber Kreise und Vierecke im allgemeinen nicht! Grund dafür ist, dass unsere Bilderdatenbank zu klein ist. Gäbe man der KI 10 000 oder 100.000 Bilder ist die Wahrscheinlichkeit, dass eine KI etwas richtig erkennt sehr hoch. Dabei müssen aber Werte wie epochs und batches richtig verändert werden, sodass die KI eine perfekte Angepasstheit bekommt. Dadurch würde aber auch der Trainingsprozess viel länger dauern, deshalb haben wir uns auf 1000 Bilder beschränkt.
 
 ## 8. Fazit
-Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausfprderung wäre ein Cooles Ziel für ein anders Projekt.
+Das Projekt hat viel Spaß gemacht und Cyrus überlegt weitere KIs eventuell, sofern die Zeit es erlaubt zu programmieren. Nicht nur Spaß, sondern auch viel Erfahrung hat dieses Projekt mit sich getragen. Auch das Programmieren einer KI mit einer wirklich eigenen Herausforderung wäre ein Cooles Ziel für ein anders Projekt. Dieses Projekt diente aber mehr dazu Grundverstänis zu Neuronalen Netzwerken zu gewinnen
 
 ## 9. Quellen
 
