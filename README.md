@@ -236,8 +236,12 @@ Das Neuronale Netzwerk hat eine hohe LOSSRATE (Fehlerquote), doch dieses kann ma
 ![Loss-and-Accuraccy](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Line-Plots-of-Cross-Entropy-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Two-Circles-Binary-Classification-Problem.png)
 
 ### Biases und Weights
+Ein Gewicht repräsentiert die Stärke der Verbindung zwischen Neuronen. Wenn das Gewicht von Neuron 1 zu Neuron 2 größer ist, bedeutet dies, dass Neuron 1 einen größeren Einfluss auf Neuron 2 hat. Ein Gewicht verringert die Wichtigkeit des Eingabewerts. Gewichte nahe Null bedeuten, dass durch Ändern dieses Eingangs der Ausgang nicht geändert wird. Negative Gewichte bedeuten, dass durch Erhöhen dieser Eingabe die Ausgabe verringert wird. Ein Gewicht bestimmt deshalb, wie stark die Eingabe die Ausgabe beeinflusst. Diese Parameter bestimmen unteranderem, ob ein Folge Neuron aktiviert wird.
+
+Jedes Neuron besitzt ein Bias, somit gibt es eine große Anzahl von Beeinflussenden Zahlen im Neuronalen Netzwerk. Die Werte von den Biases werden genau wie die Weights durch die Optimizer, während des Backpropagation Prozesses geupdatet. Sie können zusätzlich bestimmen, ob ein Folgeneuron aktiviert/deaktiviert wird. Generell sind Biases insofern nützlich, dass sie die Flexibilität der KI beim Erkennen von Objekten erhöhen. Durch Normalisation können zum Beispiel ein Neuron deaktiviert werden, doch dadurch das der Output dieses Neurons ein Bias besitzt könnte er ein Folge Neuron aktivieren. Biases und Weights lassen sich jedoch in unserem Fall nicht Manuell für ein Neuron verändern, dies geschieht automatisch im Lern-prozess.
 
 ![Biases+Weights](images/Bias+Weights.png)
+
 Beim Trainieren öffnet sich ein Ladebalken für jede Epoche, wobei zusätzlich die Genauigkeit und der Loss angegeben wird.
 Nachdem das Trainiern fertig war, ließ sich die Funktion der KI ausprobieren.
 ![Training](images/Trained.PNG)
