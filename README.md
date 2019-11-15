@@ -11,6 +11,8 @@ KIs übernehmen Momentan eine Menge Arbeit im Industriebereich und deren Einsatz
 Im generellen spricht man von Neuronalen Netzwerken, die wie ein Menschliches Gehirn durch das Lernen bestimmte Aufgaben übernehmen können. Solche Neuronale Netzwerke die Bestimmte Strukturen wiedererkennen sollen und dann bsp. einen Wert angeben, mit welcher Wahrscheinlichkeit, wie viele Kreise zu erkennen sind oder ob überhaupt welche vorhanden sind nennt man functional neural networks.
 Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnten. Weil KIs in unserer Gesellschaft immer größere Bedeutung finden, haben wir uns entschieden mehr darüber zu lernen.
 
+### [Arbeitsblog](https://github.com/LordKonstantin007/Arbeitsblog-)
+
 ### 1. Programmauswahl
 ### 2. Programme Instalieren
 ### 3. Erlernen der Grundlagen von KI's
@@ -21,7 +23,7 @@ Bilderkennung, Deepfakes und viele Aufgaben die KIs künftig übernehmen könnte
 ### 8. Fazit
 ### 9. Quellen
 
-### [Arbeitsblog](https://github.com/LordKonstantin007/Arbeitsblog-)
+
 
 
 
