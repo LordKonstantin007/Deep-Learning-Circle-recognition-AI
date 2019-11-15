@@ -354,7 +354,6 @@ else:
      prediction = "Kreis"    
 print (prediction) 
 ```
-Dieses ErratungsPrinzip haben wir uns hiervon abgeschaut. https://github.com/hatemZamzam/Cats-vs-Dogs-Classification-CNN-Keras-/blob/master/cnn.py
 
 #### ![Test1](images/test1.png) Testbild1 erkannt als Kreis
 #### ![Test2](images/test2.png) Testbild2 erkannt als Kreis
